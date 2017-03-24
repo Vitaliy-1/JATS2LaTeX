@@ -110,8 +110,8 @@
    <body>
       <sec id="s1">
          <title>Актуальність</title>
-         <p>Гострий та хронічний біль є найбільш частою скаргою пацієнтів, які <italic>звертаються</italic> за допомогою до сімейних лікарів та дільничних терапевтів [<xref ref-type="bibr" rid="bib1">1</xref>]. Одним із частих видів болю відповідно до локалізаціє є біль у абдомінальній ділянці. Згідно із прийнятими дефініціями хронічний (рекурентний) абдомінальний біль констатується при наявності больових відчуттів як мінімум 4 рази на місяць протягом останніх 2 місяців [<xref ref-type="bibr" rid="bib2">2</xref>]. </p>
-         <p>Найбільш актуальною ця проблема є серед дітей, підлітків та осіб молодого віку, у яких її розповсюдженість коливається в межах 5-25% [<xref ref-type="bibr" rid="bib2">2</xref>; <xref ref-type="bibr" rid="bib3">3</xref>]. Важливо зазначити, що більшість випадків хронічного болю у животі не спричинені органічними змінами чи соматичними захворюваннями. Так, у дослідженні, проведеному в Норвегії серед дітей із цим больовим синдромом, 93% мали біль у животі функціонального генезу, із них 87% повністю відповідали діагностичним критеріям функціональних шлунково-кишкових розладів. При цьому найбільш розповсюдженим був синдром подразненого кишківника (СПК) – 43% [<xref ref-type="bibr" rid="bib4">4</xref>] (<xref ref-type="fig" rid="fig1">рис. 1</xref>). </p>
+         <p>Гострий та хронічний біль є найбільш частою скаргою пацієнтів, які <italic>звертаються</italic> за допомогою до сімейних лікарів та дільничних терапевтів [<xref ref-type="bibr" rid="bib1">1</xref>,<xref ref-type="bibr" rid="bib1">2</xref>]. Одним із частих видів болю відповідно до локалізаціє є біль у абдомінальній ділянці. Згідно із прийнятими дефініціями хронічний (рекурентний) абдомінальний біль констатується при наявності больових відчуттів як мінімум 4 рази на місяць протягом останніх 2 місяців (<xref ref-type="table" rid="tbl1">табл. 1</xref>) [<xref ref-type="bibr" rid="bib2">2</xref>]. </p>
+         <p>Найбільш актуальною ця проблема є серед дітей, підлітків та осіб молодого віку, у яких її розповсюдженість коливається в межах 5-25% [<xref ref-type="bibr" rid="bib2">2</xref>; <xref ref-type="bibr" rid="bib3">3</xref>]. Важливо зазначити, що більшість випадків хронічного болю у животі не спричинені органічними змінами чи соматичними захворюваннями. Так, у дослідженні, проведеному в Норвегії серед дітей із цим больовим синдромом, 93% мали біль у животі функціонального генезу, із них 87% повністю відповідали діагностичним критеріям функціональних шлунково-кишкових розладів. При цьому найбільш розповсюдженим був синдром подразненого кишківника (СПК) – 43% [<xref ref-type="bibr" rid="bib4">4</xref>] (<xref ref-type="fig" rid="fig1">рис. 1</xref>) (<xref ref-type="table" rid="tbl1">табл. 1</xref>). </p>
 		 <list list-type="unordered">
                <list-item>
                   <p>Лікарі повинні усвідомлювати, що більшість антидепресантів не мають доказової бази щодо лікування таких порушень.</p>
@@ -248,7 +248,7 @@
 		    Estimates of Pain Prevalence and Severity in Adults: United States, 2012
 		    </article-title>
 		   <source>The Journal of Pain</source>
-		   <year>2015-aug</year>
+		   <year>2015</year>
 		   <volume>16</volume>
 		   <issue>8</issue>
 		   <fpage>769</fpage>
@@ -267,7 +267,7 @@
 		</person-group>
 		<article-title>Chronic and Recurrent Abdominal Pain</article-title>
 		<source>Pediatrics in Review</source>
-		<year>2016-sep</year>
+		<year>2016</year>
 		<volume>37</volume>
 		<issue>9</issue>
 		<fpage>377</fpage>
@@ -296,7 +296,7 @@
 		The Epidemiology of Childhood Recurrent Abdominal Pain in Western Countries: A Systematic Review
 		</article-title>
 		<source>The American Journal of Gastroenterology</source>
-		<year>2005-aug</year>
+		<year>2005</year>
 		<volume>100</volume>
 		<issue>8</issue>
 		<fpage>1868</fpage>
@@ -305,8 +305,8 @@
 		</element-citation>
 		</ref>
 		
-		<ref id="bib4" publication-type="journal">
-		<element-citation>
+		<ref id="bib4">
+		<element-citation publication-type="journal">
 		<person-group person-group-type="author">
 		<name>
 		<surname>Helgeland</surname>
@@ -339,7 +339,7 @@
 		<source>
 		Journal of Pediatric Gastroenterology and Nutrition
 		</source>
-		<year>2009-sep</year>
+		<year>2009</year>
 		<volume>49</volume>
 		<issue>3</issue>
 		<fpage>309</fpage>
@@ -368,7 +368,7 @@
 		The epidemiology of irritable bowel syndrome in Denmark. A population-based survey in adults $\leq$50 years of age
 		</article-title>
 		<source>Scandinavian Journal of Gastroenterology</source>
-		<year>2013-mar</year>
+		<year>2013</year>
 		<volume>48</volume>
 		<fpage>523</fpage>
 		<lpage>529</lpage>
@@ -394,7 +394,7 @@
 		</person-group>
 		<article-title>The epidemiology of irritable bowel syndrome</article-title>
 		<source>Clinical Epidemiology</source>
-		<year>2014-feb</year>
+		<year>2014</year>
 		<volume>6</volume>
 		<fpage>71</fpage>
 		<lpage>80</lpage>
@@ -530,7 +530,7 @@
 		Pharmacologic Treatment in Pediatric Functional Abdominal Pain Disorders: A Systematic Review
 		</article-title>
 		<source>The Journal of Pediatrics</source>
-		<year>2015-feb</year>
+		<year>2015</year>
 		<volume>166</volume>
 		<issue>2</issue>
 		<fpage>424</fpage>
@@ -563,7 +563,7 @@
 		Enteric-coated, pH-dependent peppermint oil capsules for the treatment of irritable bowel syndrome in children
 		</article-title>
 		<source>The Journal of Pediatrics</source>
-		<year>2001-jan</year>
+		<year>2001</year>
 		<volume>138</volume>
 		<issue>1</issue>
 		<fpage>125</fpage>
@@ -572,7 +572,7 @@
 		</element-citation>
 		</ref>
 		
-		<ref id="R24">
+		<ref id="bib11">
 		<element-citation publication-type="journal">
 		<person-group person-group-type="author">
 		<name>

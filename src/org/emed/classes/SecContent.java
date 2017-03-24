@@ -1,6 +1,5 @@
 package org.emed.classes;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class SecContent extends Section {

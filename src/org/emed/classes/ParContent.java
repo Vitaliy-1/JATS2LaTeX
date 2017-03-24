@@ -3,6 +3,7 @@ package org.emed.classes;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ParContent extends SecContent {
 	private String title;
 	private List<ParContent> parContentList;
@@ -12,7 +13,7 @@ public class ParContent extends SecContent {
 	}
 
 	public void setTitle(String title) {
-		this.title = "\\par " + title;
+		this.title = title;
 	}
 
 	public List<ParContent> getParContentList() {

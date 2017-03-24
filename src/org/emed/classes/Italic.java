@@ -1,14 +1,15 @@
 package org.emed.classes;
 
-public class Italic extends ParContent {
-	private String itContent;
 
-	public String getItContent() {
-		return itContent;
+public class Italic extends ParContent {
+	private String content;
+
+	public String getContent() {
+		return content;
 	}
 
-	public void setItContent(String itContent) {
-		this.itContent = "\\textit {" + itContent + "}";
+	public void setContent(String content) {
+		this.content = content;
 	}
 
 }
