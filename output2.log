@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.18)  20 MAR 2017 22:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.18)  1 APR 2017 23:18
 entering extended mode
 **./output2.tex
 (output2.tex
@@ -3158,6 +3158,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\PD1\cyri' on input line 43.
 
 
+LaTeX Warning: Citation `bib14' on page 1 undefined on input line 44.
+
+
 Underfull \hbox (badness 8189) in paragraph at lines 44--45
 \T2A/cmr/m/n/10 успi-шно за-сто-со-ву-ю-ться ба-га-то кла-си-чних те-хнiк
  []
@@ -3180,12 +3183,15 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 48.
+
+
+LaTeX Warning: Citation `bib15' on page 2 undefined on input line 54.
+
 Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 55.
 Package babel Info: Redefining ukrainian shorthand "~
 (babel)             in language  on input line 55.
 
-
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\<def>-command' on input line 55.
 
@@ -3856,6 +3862,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\PD1\cyrya' on input line 55.
+
+
+LaTeX Warning: Citation `bib16' on page 2 undefined on input line 56.
 
 Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 58.
@@ -4644,6 +4653,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\PD1\cyrya' on input line 58.
+
+
+LaTeX Warning: Citation `bib17' on page 2 undefined on input line 59.
+
+
+LaTeX Warning: Citation `bib18' on page 2 undefined on input line 59.
 
 Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 61.
@@ -5387,6 +5402,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\PD1\cyrya' on input line 62.
 
+
+LaTeX Warning: Citation `bib19' on page 3 undefined on input line 64.
+
+
+LaTeX Warning: Citation `bib20' on page 3 undefined on input line 64.
+
+
+LaTeX Warning: Citation `bib21' on page 3 undefined on input line 64.
+
 Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 65.
 Package babel Info: Redefining ukrainian shorthand "~
@@ -5838,6 +5862,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\PD1\cyrm' on input line 65.
+
+
+LaTeX Warning: Citation `bib22' on page 3 undefined on input line 66.
+
+
+LaTeX Warning: Citation `bib23' on page 3 undefined on input line 66.
+
+
+LaTeX Warning: Citation `bib24' on page 3 undefined on input line 67.
 
 
 Underfull \vbox (badness 3386) has occurred while \output is active []
@@ -7037,6 +7070,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\PD1\CYRT' on input line 71.
 
 
+LaTeX Warning: Citation `bib15' on page 4 undefined on input line 73.
+
+
 Underfull \hbox (badness 2582) in paragraph at lines 74--75
 \T2A/cmr/m/n/10 три-му-ю-ча (ро-дже-рi-ан-ська, гештальт-терапiя, тран-з-
  []
@@ -7069,6 +7105,9 @@ Underfull \vbox (badness 1005) has occurred while \output is active []
 Underfull \hbox (badness 1028) in paragraph at lines 82--83
 []\T2A/cmr/m/n/10 По-друге, по-рiв-ня-но з пси-хо-ди-на-мi-чним пiд-хо-дом,
  []
+
+
+LaTeX Warning: Citation `bib25' on page 5 undefined on input line 83.
 
 
 LaTeX Warning: Reference `tbl5' on page 5 undefined on input line 83.
@@ -7313,8 +7352,17 @@ Package babel Info: Redefining ukrainian shorthand "|
 Package babel Info: Redefining ukrainian shorthand "~
 (babel)             in language  on input line 87.
  [5]
+
+LaTeX Warning: Citation `bib26' on page 6 undefined on input line 88.
+
+
 Underfull \hbox (badness 7944) in paragraph at lines 93--94
 []\T2A/cmr/m/n/10 Wittchen H. U. Generali-zed anxi-ety di-sorder:
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 96--97
+[]\T2A/cmr/m/n/10 Diagnostic and Stati-sti-cal Manual of Mental Di-
  []
 
 
@@ -7328,8 +7376,36 @@ Underfull \hbox (badness 4899) in paragraph at lines 98--99
  []
 
 
+Underfull \hbox (badness 1735) in paragraph at lines 102--103
+[]\T2A/cmr/m/n/10 Ellis A. Rati-onal Emoti-ve Behavi-or Therapy: A
+ []
+
+! Misplaced alignment tab character &.
+l.103 .... E. McMullin. - New York: W. W. Norton &
+                                                   Company, 1999.
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 106.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 106.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 106.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 106.
+[6]
 Underfull \hbox (badness 1655) in paragraph at lines 107--108
 \T2A/cmr/m/n/10 for generali-zed anxi-ety di-sorder and the role of
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 111--112
+[]\T2A/cmr/m/n/10 Dobson K. S. Handbook of Cognitive-Behavioral
  []
 
 
@@ -7342,35 +7418,44 @@ Underfull \hbox (badness 3068) in paragraph at lines 116--117
 \T2A/cmr/m/n/10 sorder: A meta-analysis / Ameri-can Psychi-atric
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 120.
 Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 120.
 Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 120.
 Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 120.
 Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 118.
-[6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
+(babel)             in language  on input line 120.
+[7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 120.
  (output2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 118.
-Package rerunfilecheck Info: File `output2.out' has not changed.
-(rerunfilecheck)             Checksum: 2A6D0FB7C5F0288A367D30FC07B02E5A;474.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 120.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 120.
 
+
+Package rerunfilecheck Warning: File `output2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `output2.out':
+(rerunfilecheck)             Before: 162F34FC2E12ABD1EA9C32E27C911F45;437
+(rerunfilecheck)             After:  2A6D0FB7C5F0288A367D30FC07B02E5A;474.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 17817 strings out of 493335
- 328268 string characters out of 3139266
- 381673 words of memory out of 3000000
- 21112 multiletter control sequences out of 15000+200000
+ 17822 strings out of 493335
+ 328307 string characters out of 3139266
+ 381309 words of memory out of 3000000
+ 21114 multiletter control sequences out of 15000+200000
  12393 words of font info for 29 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,10n,43p,10381b,741s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,10n,43p,10381b,863s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1000.pfb><C:/Program Files/MiKTe
@@ -7378,9 +7463,9 @@ X 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/cm-super/sfrm1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm
 -super/sfti1000.pfb>
-Output written on output2.pdf (6 pages, 159204 bytes).
+Output written on output2.pdf (7 pages, 161124 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

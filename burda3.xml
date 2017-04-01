@@ -695,8 +695,8 @@
 		</element-citation>
 		</ref>
 		
-		<ref id="bib4" publication-type="journal">
-		<element-citation>
+		<ref id="bib4">
+		<element-citation publication-type="journal">
 		<person-group person-group-type="author">
 		<name>
 		<surname>Hunt</surname>
@@ -835,7 +835,7 @@
 		</ref>
 		
 		<ref id="bib10">
-		<element-citation publication-type="book">
+		<element-citation publication-type="chapter">
 		<person-group person-group-type="author">
 		  <name>
 		    <surname>Kessler</surname>
@@ -890,7 +890,7 @@
 		<person-group person-group-type="author">
 		  <name>
 		    <surname>Ellis</surname>
-		    <given-names>Albert</given-names>
+		    <given-names>A</given-names>
 		  </name>
 		</person-group>
 		<source>
@@ -927,7 +927,7 @@
 		</person-group>
 		<source>The Cognitive Behavioral Workbook for Anxiety: A Step-by-Step Program</source>
 		<publisher-loc>Oakland</publisher-loc>
-		<publication-name>New Harbinger Publications</publication-name>
+		<publisher-name>New Harbinger Publications</publisher-name>
 		<year>2008</year>
 		</element-citation>
 		</ref>
@@ -939,7 +939,7 @@
 		</person-group>
 		<source>Generalised anxiety disorder and panic disorder in adults: management</source>
 		<publisher-loc>Manchester</publisher-loc>
-		<publication-name>NICE</publication-name>
+		<publisher-name>NICE</publisher-name>
 		<year>2011</year>
 		<ext-link>https://www.nice.org.uk/guidance/CG113</ext-link>
 		</element-citation>
@@ -1118,7 +1118,7 @@
 		<person-group person-group-type="author">
 		<name>
 		<surname>Young</surname>
-		<given-names>Susan</given-names>
+		<given-names>S</given-names>
 		</name>
 		</person-group>
 		<source>
@@ -1200,6 +1200,42 @@
 		<fpage>130</fpage>
 		<lpage>140</lpage>
 		<pub-id pub-id-type="doi">10.1016/j.cpr.2014.01.002</pub-id>
+		</element-citation>
+		</ref>
+		
+		<ref id="bib27">
+		<element-citation publication-type="conference">
+		<person-group person-group-type="author">
+		  <name>
+		    <surname>Carmi</surname>
+		    <given-names>L</given-names>
+		  </name>
+		</person-group>
+		<source>
+		Clinical intervention in golden hours – state of the art
+		</source>
+		<conf-name>29th ECNP Congress</conf-name>
+		<conf-loc>Vienna, Austria</conf-loc>
+		<conf-date>September 20</conf-date>
+		<year>2016</year>
+		</element-citation>
+		</ref>
+		
+		<ref id="bib28">
+		<element-citation publication-type="conference">
+		<person-group person-group-type="author">
+		<name>
+		<surname>Popoli</surname>
+		<given-names>M</given-names>
+		</name>
+		</person-group>
+		<source>
+		Stress and antidepressants: time-dependent changes in synaptic function and brain architecture
+		</source>
+		<conf-name>29th ECNP Congress</conf-name>
+		<conf-loc>Vienna, Austria</conf-loc>
+		<conf-date>September 20</conf-date>
+		<year>2016</year>
 		</element-citation>
 		</ref>
 		</ref-list>

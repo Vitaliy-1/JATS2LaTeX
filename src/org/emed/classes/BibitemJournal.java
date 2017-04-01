@@ -11,7 +11,7 @@ public class BibitemJournal extends Bibitem {
     private int year;
     private int volume;
     private int issue;
-    private int fpage;
+    private String fpage;
     private int lpage;
     private String doi;
     private String pmid;
@@ -72,11 +72,11 @@ public class BibitemJournal extends Bibitem {
 		this.issue = issue;
 	}
 
-	public int getFpage() {
+	public String getFpage() {
 		return fpage;
 	}
 
-	public void setFpage(int fpage) {
+	public void setFpage(String fpage) {
 		this.fpage = fpage;
 	}
 
