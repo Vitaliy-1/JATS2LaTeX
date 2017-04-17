@@ -6,6 +6,7 @@ import java.util.List;
 
 public class ParContent extends SecContent {
 	private String title;
+	private String type;
 	private List<ParContent> parContentList;
 
 	public String getTitle() {
@@ -21,6 +22,14 @@ public class ParContent extends SecContent {
 			parContentList = new ArrayList<ParContent> ();
 		}
 		return parContentList;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
 	}
 
 

@@ -4,7 +4,6 @@ public class Affiliation {
 	private String institution;
 	private String country;
 	private String city;
-	
 	public String getInstitution() {
 		return institution;
 	}

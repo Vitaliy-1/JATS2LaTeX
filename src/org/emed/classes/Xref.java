@@ -12,7 +12,7 @@ public class Xref extends ParContent {
 		return bibContent;
 	}
 	public void setBibContent(String bibContent) {
-		this.bibContent = "\\cite{bib" + bibContent + "}";
+		this.bibContent = bibContent;
 	}
 	public String getFigContent() {
 		return figContent;

@@ -1,7 +1,6 @@
 package org.emed.main;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
@@ -19,9 +18,9 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class Back {
-	public static List<Bibitem> back(Document document, XPath xPath)
+	protected static ArrayList<Bibitem> back(Document document, XPath xPath)
 			throws XPathExpressionException, DOMException, NumberFormatException {
-		List<Bibitem> bibitems = new ArrayList<Bibitem>();
+		ArrayList<Bibitem> bibitems = new ArrayList<Bibitem>();
 		NodeList bibXmls = (NodeList) xPath.compile("/article/back/ref-list/ref").evaluate(document, XPathConstants.NODESET);
 		for (int i = 0; i<bibXmls.getLength(); i++) {
 			Bibitem bibitem = new Bibitem();

@@ -1,0 +1,42 @@
+package org.emed.classes;
+
+import java.util.ArrayList;
+
+public class Figure extends SecContent {
+	private String label;
+	private String link;
+	private String id;
+	private ArrayList <ParContent> parContent;
+	
+	public String getLabel() {
+		return label;
+	}
+	public void setLabel(String label) {
+		this.label = label;
+	}
+	public String getLink() {
+		return link;
+	}
+	public void setLink(String link) {
+		this.link = link;
+	}
+	public String getTitle() {
+		return title;
+	}
+	
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public ArrayList <ParContent> getParContent() {
+		if (parContent == null) {
+			parContent = new ArrayList<ParContent>();
+		}
+		return parContent;
+	}
+}

@@ -449,9 +449,6 @@ public class BackGost {
 		}
 		wrobj.write("\\end{thebibliography}");
 	    wrobj.newLine();
-	    wrobj.write("\\end{document}");
-	    wrobj.close();
-		
 	}
 	
 }
