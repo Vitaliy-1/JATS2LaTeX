@@ -1,5 +1,11 @@
 package org.emed.main;
-
+/**
+ * @file /src/org/emed/main/Main.java
+ *
+ * Copyright (c) 2017 Vitaliy Bezsheiko
+ * 
+ * Distributed under the GNU GPL v3.
+ */
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

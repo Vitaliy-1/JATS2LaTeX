@@ -1,5 +1,11 @@
 package org.emed.latex.standard;
-
+/**
+ * @file /src/org/emed/latex/standard/MetaStandard.java
+ *
+ * Copyright (c) 2017 Vitaliy Bezsheiko
+ * 
+ * Distributed under the GNU GPL v3.
+ */
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.util.Map.Entry;

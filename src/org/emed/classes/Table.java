@@ -1,5 +1,11 @@
 package org.emed.classes;
-
+/**
+ * @file /src/org/emed/classes/Table.java
+ *
+ * Copyright (c) 2017 Vitaliy Bezsheiko
+ * 
+ * Distributed under the GNU GPL v3.
+ */
 import java.util.ArrayList;
 
 public class Table extends Section {

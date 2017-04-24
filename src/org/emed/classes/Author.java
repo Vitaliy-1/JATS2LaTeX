@@ -1,5 +1,11 @@
 package org.emed.classes;
-
+/**
+ * @file /src/org/emed/classes/Author.java
+ *
+ * Copyright (c) 2017 Vitaliy Bezsheiko
+ * 
+ * Distributed under the GNU GPL v3.
+ */
 public class Author {
 	private String surname;
 	private String given;

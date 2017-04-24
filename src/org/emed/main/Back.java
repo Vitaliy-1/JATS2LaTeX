@@ -1,4 +1,11 @@
 package org.emed.main;
+/**
+ * @file /src/org/emed/main/BackBib.java
+ *
+ * Copyright (c) 2017 Vitaliy Bezsheiko
+ * 
+ * Distributed under the GNU GPL v3.
+ */
 
 import java.util.ArrayList;
 

@@ -1,5 +1,11 @@
 package org.emed.classes;
-
+/**
+ * @file /src/org/emed/classes/Duplicate.java
+ *
+ * Copyright (c) 2017 Vitaliy Bezsheiko
+ * 
+ * Distributed under the GNU GPL v3.
+ */
 /* This class created for managing multirows in tables 
  * In rows we set the number of a row, where multirow exists
  * In cell we set the number of cell in the row, where multirow exists
