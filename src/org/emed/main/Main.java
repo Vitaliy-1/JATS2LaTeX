@@ -22,51 +22,71 @@ import org.emed.classes.ArticleMeta;
 import org.emed.classes.Bibitem;
 import org.emed.classes.LaTeX;
 import org.emed.classes.Section;
-import org.emed.latex.gost.*;
+import org.emed.latex.standard.BackBib;
+import org.emed.latex.standard.BodyStandard;
+import org.emed.latex.standard.MetaStandard;
 
 public class Main {
 
 	public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException, XPathExpressionException, IllegalArgumentException, IllegalAccessException {
-		String inputFile = "cira_revised.xml";
-		String outputFile = "cira_revised.tex";
+		String inputFile = "burda.xml";
 		
-		writerToFile(inputFile, outputFile);
+		
+		// path to LaTeX in Stadard format
+		String outputLatexStandard = "burda_standard.tex";
+		
+		// path to bibtex
+		String outputBib = "burda.bib";
+		
+		writerToFile(inputFile, outputLatexStandard, outputBib);
 		
 	}
 
-	private static void writerToFile(String inputFile, String outputFile) throws IOException,
+	private static void writerToFile(String inputFile, String outputLatexStandard, String outputBib) throws IOException,
 			ParserConfigurationException, SAXException, XPathExpressionException, DOMException, NumberFormatException {
-		//BufferedWriter wrobj = new BufferedWriter (new FileWriter("output2.tex"));
-		Path logFile = Paths.get(outputFile);
-		BufferedWriter wrobj = Files.newBufferedWriter(logFile, StandardCharsets.UTF_8);
-		//BufferedWriter wrobj = new BufferedWriter (new FileWriter(outputFile));
+		
+		// writing LaTeX in World Standard
+		Path latexStandard = Paths.get(outputLatexStandard);
+		BufferedWriter wrlatex = Files.newBufferedWriter(latexStandard, StandardCharsets.UTF_8);
+		
+		// writing bibtex
+		Path bibtexStandard = Paths.get(outputBib);
+		BufferedWriter bib = Files.newBufferedWriter(bibtexStandard, StandardCharsets.UTF_8);
+		
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = factory.newDocumentBuilder();
-		//Document document = builder.parse("cira_revised.xml");
+		
 		Document document = builder.parse(inputFile);
 		XPath xPath =  XPathFactory.newInstance().newXPath();
 		
 		/* parsing JATS XML */
 		LaTeX latex = jatsParser(document, xPath);
 		
-		/* writing to LaTeX (GOST standard) */
-		latexGostWriter(wrobj, latex);
+		/* creating reference to a bib with regex */
+		String referenceLink = outputBib.trim().replaceAll(".bib$", "");
+		
+		/* writing to LaTeX (GOST, standard, bib) */
+		latexStandardWriter(wrlatex, latex, referenceLink);
+		bibWriter(bib, latex);
 	}
 
-	private static void latexGostWriter(BufferedWriter wrobj, LaTeX latex) throws IOException {
+	
+	private static void latexStandardWriter(BufferedWriter wrlatex, LaTeX latex, String referenceLink) throws IOException {
 		
-		/* writing meta to the latex (gost) */
-		MetaGost.meta(wrobj, latex.getArticleMeta());
+		/* writing meta to the latex (standard) */
+		MetaStandard.meta(wrlatex, latex.getArticleMeta());
 		
 		/* writing sections to the latex (gost) */
-		BodyGost.body(wrobj, latex.getSection());
+		BodyStandard.body(wrlatex, latex.getSection(), referenceLink);
 		
-		/* writing bibliography to the latex (gost)*/
-		BackGost.back(wrobj, latex.getBibitem());
-		
-		/* writing second meta section */
-		MetaGost.metaSecond(wrobj, latex.getArticleMeta());
 	}
+	
+	private static void bibWriter(BufferedWriter bib, LaTeX latex) throws IOException {
+		
+		/* writing references to the bib file */
+		BackBib.back(bib, latex.getBibitem());	
+	}
+
 
 	private static LaTeX jatsParser(Document document, XPath xPath)
 			throws XPathExpressionException, DOMException, NumberFormatException {

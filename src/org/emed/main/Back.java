@@ -27,9 +27,16 @@ public class Back {
 			Node bibXml = bibXmls.item(i);
 			bibitem.setId(bibXml.getAttributes().getNamedItem("id").getTextContent());
 			bibitems.add(bibitem);
-			Node ref = (Node) xPath.compile("element-citation").evaluate(bibXml, XPathConstants.NODE);
 			
-			if (ref.getAttributes().getNamedItem("publication-type") != null && ref.getAttributes().getNamedItem("publication-type").getTextContent().contains("journal")) {
+			/* checking Nodes specific to journal, book, chapter or conference */
+			Node articleTitleCheck = (Node) xPath.compile("element-citation/article-title").evaluate(bibXml, XPathConstants.NODE);
+			Node bookTitleCheck = (Node) xPath.compile("element-citation/source").evaluate(bibXml, XPathConstants.NODE);
+			Node chapterTitleCheck = (Node) xPath.compile("element-citation/chapter-title").evaluate(bibXml, XPathConstants.NODE);
+			Node conferenceTitleCheck = (Node) xPath.compile("element-citation/conf-name").evaluate(bibXml, XPathConstants.NODE);
+			
+			/* checking element citation element atribute */
+			Node ref = (Node) xPath.compile("element-citation").evaluate(bibXml, XPathConstants.NODE);
+			if ((ref.getAttributes().getNamedItem("publication-type") != null && ref.getAttributes().getNamedItem("publication-type").getTextContent().contains("journal")) || articleTitleCheck != null) {
 				BibitemJournal bibJournal = new BibitemJournal();
 				NodeList surname = (NodeList) xPath.compile("person-group/name/surname").evaluate(ref, XPathConstants.NODESET);
 				if (surname != null) {
@@ -92,12 +99,11 @@ public class Back {
 					bibJournal.setUrl(urlLink.getTextContent());
 				}
 				bibitem.getBibitem().add(bibJournal);	
-			} else if (ref.getAttributes().getNamedItem("publication-type") != null && ref.getAttributes().getNamedItem("publication-type").getTextContent().contains("book")) {
+			} else if ((ref.getAttributes().getNamedItem("publication-type") != null && ref.getAttributes().getNamedItem("publication-type").getTextContent().contains("book")) || (bookTitleCheck != null && chapterTitleCheck == null && conferenceTitleCheck == null)) {
 				BibitemBook bibitemBook = new BibitemBook();
 				NodeList surname = (NodeList) xPath.compile("person-group/name/surname").evaluate(ref, XPathConstants.NODESET);
 				if (surname != null) {
 					for (int i1 = 0; i1 < surname.getLength(); i1++) {
-						//System.out.println(surname.item(i1).getTextContent());
 						BibName bibName = new BibName(); 
 						bibName.setSurname(surname.item(i1).getTextContent());
 						bibitemBook.getName().add(bibName);
@@ -131,7 +137,7 @@ public class Back {
 				}
 				
 				bibitem.getBibitem().add(bibitemBook);	
-			} else if (ref.getAttributes().getNamedItem("publication-type") != null && ref.getAttributes().getNamedItem("publication-type").getTextContent().contains("chapter")) {
+			} else if ((ref.getAttributes().getNamedItem("publication-type") != null && ref.getAttributes().getNamedItem("publication-type").getTextContent().contains("chapter")) || chapterTitleCheck != null) {
 				BibitemChapter bibitemChapter = new BibitemChapter();
 				NodeList personGroups = (NodeList) xPath.compile("person-group").evaluate(ref, XPathConstants.NODESET);
 				for (int pp = 0; pp < personGroups.getLength(); pp++) {
@@ -253,6 +259,72 @@ public class Back {
 				}
 				
 				bibitem.getBibitem().add(bibitemConf);	
+				
+				/* if publication type is not explicitly indicated
+				 * treat as journal article
+				 */
+			} else {
+				BibitemJournal bibJournal = new BibitemJournal();
+				NodeList surname = (NodeList) xPath.compile("person-group/name/surname").evaluate(ref, XPathConstants.NODESET);
+				if (surname != null) {
+					for (int i1 = 0; i1 < surname.getLength(); i1++) {
+						BibName bibName = new BibName(); 
+						bibName.setSurname(surname.item(i1).getTextContent());
+						bibJournal.getName().add(bibName);
+						Node given = (Node) xPath.compile("following-sibling::given-names[1]").evaluate(surname.item(i1), XPathConstants.NODE);
+					    if (given != null) {
+					    	char[] initials = given.getTextContent().toCharArray();
+					    	bibName.setInitials(initials);
+					    }
+					}
+				}
+				Node collab = (Node) xPath.compile("person-group/collab").evaluate(ref, XPathConstants.NODE);
+				if (collab != null) {
+					bibJournal.setCollab(collab.getTextContent().trim());
+				}
+				Node title = (Node) xPath.compile("article-title").evaluate(ref, XPathConstants.NODE);
+				if (title != null) {
+					bibJournal.setTitle(title.getTextContent());
+				}
+				Node source = (Node) xPath.compile("source").evaluate(ref, XPathConstants.NODE);
+				if (source != null) {
+					bibJournal.setSource(source.getTextContent());
+				}
+				Node year = (Node) xPath.compile("year").evaluate(ref, XPathConstants.NODE);
+				if (year != null) {
+					int yearInt = Integer.parseInt(year.getTextContent());
+					bibJournal.setYear(yearInt);
+				}
+				Node volume = (Node) xPath.compile("volume").evaluate(ref, XPathConstants.NODE);
+				if (volume != null) {
+					int volumeInt = Integer.parseInt(volume.getTextContent());
+					bibJournal.setVolume(volumeInt);
+				}
+				Node issue = (Node) xPath.compile("issue").evaluate(ref, XPathConstants.NODE);
+				if (issue != null) {
+					int issueInt = Integer.parseInt(issue.getTextContent());
+					bibJournal.setIssue(issueInt);
+				}
+				Node fpage = (Node) xPath.compile("fpage").evaluate(ref, XPathConstants.NODE);
+				if (fpage != null) {
+					bibJournal.setFpage(fpage.getTextContent());
+				}
+				Node lpage = (Node) xPath.compile("lpage").evaluate(ref, XPathConstants.NODE);
+				if (lpage != null) {
+					int pageInt = Integer.parseInt(lpage.getTextContent());
+					bibJournal.setLpage(pageInt);
+				}
+				Node doipmid = (Node) xPath.compile("pub-id").evaluate(ref, XPathConstants.NODE);
+				if (doipmid != null && doipmid.getAttributes().getNamedItem("pub-id-type").getTextContent().contains("doi")) {
+					bibJournal.setDoi(doipmid.getTextContent());
+				} else if (doipmid != null && doipmid.getAttributes().getNamedItem("pub-id-type").getTextContent().contains("pmid")) {
+					bibJournal.setPmid(doipmid.getTextContent());
+				}
+				Node urlLink = (Node) xPath.compile("ext-link").evaluate(ref, XPathConstants.NODE);
+				if (urlLink != null) {
+					bibJournal.setUrl(urlLink.getTextContent());
+				}
+				bibitem.getBibitem().add(bibJournal);	
 			}
 		}
 		return bibitems;

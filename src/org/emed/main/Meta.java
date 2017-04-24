@@ -31,15 +31,15 @@ public class Meta {
 			Affiliation affiliation = new Affiliation();
 			Node institution = (Node) xPath.compile("institution").evaluate(affiliationNode, XPathConstants.NODE);
 			if (institution != null) {
-				affiliation.setInstitution(institution.getTextContent());
+				affiliation.setInstitution(institution.getTextContent().trim());
 			}
 			Node city = (Node) xPath.compile("addr-line/named-content").evaluate(affiliationNode, XPathConstants.NODE);
 			if (city != null) {
-				affiliation.setCity(city.getTextContent());
+				affiliation.setCity(city.getTextContent().trim());
 			}
 			Node country = (Node) xPath.compile("country").evaluate(affiliationNode, XPathConstants.NODE);
 			if (country != null) {
-				affiliation.setCountry(country.getTextContent());
+				affiliation.setCountry(country.getTextContent().trim());
 			}
 			
         	articleMeta.getInstitution().put(aff, affiliation);
@@ -61,11 +61,11 @@ public class Meta {
 			Author author = new Author();
 			Node surname = (Node) xPath.compile("name/surname").evaluate(contrib, XPathConstants.NODE);
 			if (surname != null) {
-				author.setSurname(surname.getTextContent());
+				author.setSurname(surname.getTextContent().trim());
 			}
         	Node given = (Node) xPath.compile("name/given-names").evaluate(contrib, XPathConstants.NODE);
         	if (given != null) {
-        		author.setGiven(given.getTextContent());
+        		author.setGiven(given.getTextContent().trim());
         	}
         	
         //  set authors email
@@ -75,7 +75,7 @@ public class Meta {
 	        	for (int y = 0; y < emailNodes.getLength(); y++) {
 	        		Node emailNode = (Node) xPath.compile("email").evaluate(emailNodes.item(y), XPathConstants.NODE);
 	        		if (emailNode != null && (corresp.getAttributes().getNamedItem("rid").getNodeValue().equals(emailNodes.item(y).getAttributes().getNamedItem("id").getNodeValue()))) {
-	        			author.setEmail(emailNode.getTextContent());
+	        			author.setEmail(emailNode.getTextContent().trim());
 	        		}	
 	        	}
         	}
@@ -89,11 +89,11 @@ public class Meta {
         	for (int i = 0; i < abstractSecs.getLength(); i++) {
         		Node titleNode = (Node) xPath.compile("title").evaluate(abstractSecs.item(i), XPathConstants.NODE);
         		Node pNode = (Node) xPath.compile("p").evaluate(abstractSecs.item(i), XPathConstants.NODE);
-        		articleMeta.getAbstractEng().put(titleNode.getTextContent(), pNode.getTextContent());
+        		articleMeta.getAbstractEng().put(titleNode.getTextContent(), pNode.getTextContent().trim());
         	}
         } else if ((abstractNode != null) && (abstractNode.getAttributes() == null || abstractNode.getAttributes().getNamedItem("abstract-type").getNodeValue().equals("short"))) {
         	Node abstractShort = (Node) xPath.compile("p").evaluate(abstractNode, XPathConstants.NODE);
-        	articleMeta.getAbstractEng().put(null, abstractShort.getTextContent());
+        	articleMeta.getAbstractEng().put(null, abstractShort.getTextContent().trim());
         }
         
         
@@ -105,17 +105,17 @@ public class Meta {
         	for (int i = 0; i < abstractSecs.getLength(); i++) {
         		Node titleNode = (Node) xPath.compile("title").evaluate(abstractSecs.item(i), XPathConstants.NODE);
         		Node pNode = (Node) xPath.compile("p").evaluate(abstractSecs.item(i), XPathConstants.NODE);
-        		articleMeta.getAbstractUkr().put(titleNode.getTextContent(), pNode.getTextContent());
+        		articleMeta.getAbstractUkr().put(titleNode.getTextContent(), pNode.getTextContent().trim());
         	}
-        } else if ((abstractTransNode != null) && (abstractTransNode.getAttributes() == null) && (abstractTransNode.getAttributes().getNamedItem("abstract-type") == null || abstractTransNode.getAttributes().getNamedItem("abstract-type").getNodeValue().equals("short"))) {
+        } else if ((abstractTransNode != null) && (abstractTransNode.getAttributes() != null) && (abstractTransNode.getAttributes().getNamedItem("abstract-type") == null || abstractTransNode.getAttributes().getNamedItem("abstract-type").getNodeValue().equals("short"))) {
         	Node abstractShort = (Node) xPath.compile("p").evaluate(abstractTransNode, XPathConstants.NODE);
-        	articleMeta.getAbstractUkr().put(null, abstractShort.getTextContent());
+        	articleMeta.getAbstractUkr().put(null, abstractShort.getTextContent().trim());
         }
         
         // set Journal title
         Node journalNameNode = (Node) xPath.compile("/article/front/journal-meta/journal-id[@journal-id-type='publisher']").evaluate(document, XPathConstants.NODE);
         if (journalNameNode != null) {
-        	articleMeta.setJournal(journalNameNode.getTextContent());
+        	articleMeta.setJournal(journalNameNode.getTextContent().trim());
         }
         // set article title
         NodeList articleTitle = (NodeList) xPath.compile("/article/front/article-meta/title-group/article-title").evaluate(document, XPathConstants.NODESET);
@@ -249,6 +249,11 @@ public class Meta {
         Node udc = (Node) xPath.compile("/article/front/article-meta/article-id[@pub-id-type='other']").evaluate(document, XPathConstants.NODE);
         if (udc != null) {
         	articleMeta.setUdc(udc.getTextContent());
+        }
+        // set doi
+        Node doi = (Node) xPath.compile("/article/front/article-meta/article-id[@pub-id-type='doi']").evaluate(document, XPathConstants.NODE);
+        if (doi != null) {
+        	articleMeta.setDoi(doi.getTextContent());
         }
 		return articleMeta;
 	}	

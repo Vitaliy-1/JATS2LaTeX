@@ -33,13 +33,13 @@ public class Xref extends ParContent {
 		return figDescription;
 	}
 	public void setFigDescription(String figDescription) {
-		this.figDescription = figDescription;
+		this.figDescription = figDescription.replaceAll("\\s*\\d+", "");
 	}
 	public String getTableDescription() {
 		return tableDescription;
 	}
 	public void setTableDescription(String tableDescription) {
-		this.tableDescription = tableDescription;
+		this.tableDescription = tableDescription.replaceAll("\\s*\\d+", "");
 	}
 	
 	

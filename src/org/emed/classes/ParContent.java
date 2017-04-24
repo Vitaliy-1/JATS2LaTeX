@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class ParContent extends SecContent {
+public class ParContent extends Section {
 	private String title;
 	private String type;
 	private List<ParContent> parContentList;

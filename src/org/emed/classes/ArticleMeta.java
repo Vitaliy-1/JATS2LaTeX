@@ -20,6 +20,7 @@ public class ArticleMeta {
 	private String monthUkr;
 	private int year;
 	private ArrayList<String> keywords;
+	private String doi;
 	
 	public String getJournal() {
 		return journal;
@@ -110,5 +111,11 @@ public class ArticleMeta {
 			keywords = new ArrayList<String> ();
 		}
 		return keywords;
+	}
+	public String getDoi() {
+		return doi;
+	}
+	public void setDoi(String doi) {
+		this.doi = doi;
 	}
 }

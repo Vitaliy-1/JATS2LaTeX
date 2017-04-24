@@ -2,7 +2,7 @@ package org.emed.classes;
 
 import java.util.ArrayList;
 
-public class Table extends SecContent {
+public class Table extends Section {
 	private String id;
 	private String label;
 	private ArrayList <ParContent> parContent;
