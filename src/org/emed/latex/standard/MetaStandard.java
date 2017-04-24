@@ -180,7 +180,7 @@ public class MetaStandard {
 		wrlatex.newLine();
 		wrlatex.write("\\begin{center}");
 		wrlatex.newLine();
-		wrlatex.write("{\\Large \\textbf{Анотація}} \\vspace{1ex}\\\\");
+		wrlatex.write("{\\Large \\textbf{Abstract}} \\vspace{1ex}\\\\");
 		wrlatex.newLine();
 		wrlatex.write("\\end{center}");
 		wrlatex.newLine();

@@ -7,6 +7,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -18,6 +20,7 @@ import javax.xml.xpath.XPathFactory;
 import org.w3c.dom.DOMException;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
+
 import org.emed.classes.ArticleMeta;
 import org.emed.classes.Bibitem;
 import org.emed.classes.LaTeX;
@@ -28,15 +31,17 @@ import org.emed.latex.standard.MetaStandard;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException, XPathExpressionException, IllegalArgumentException, IllegalAccessException {
-		String inputFile = "burda.xml";
-		
+	public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException, XPathExpressionException, IllegalArgumentException, IllegalAccessException, org.emed.main.CustomExceptions {
+		String inputFile = args[0];
+		if (!(inputFile.endsWith(".xml"))) {
+    		throw new CustomExceptions("Input file extension must be .xml");
+    	}
 		
 		// path to LaTeX in Stadard format
-		String outputLatexStandard = "burda_standard.tex";
+		String outputLatexStandard = args[1];
 		
 		// path to bibtex
-		String outputBib = "burda.bib";
+		String outputBib = args[2];
 		
 		writerToFile(inputFile, outputLatexStandard, outputBib);
 		
@@ -64,6 +69,13 @@ public class Main {
 		
 		/* creating reference to a bib with regex */
 		String referenceLink = outputBib.trim().replaceAll(".bib$", "");
+		if (referenceLink.contains("\\") || referenceLink.contains("/")) {
+			Pattern p = Pattern.compile("(\\w+)$");
+			Matcher m = p.matcher(referenceLink);
+			if (m.find()) {
+				referenceLink = m.group();
+			}
+		} 
 		
 		/* writing to LaTeX (GOST, standard, bib) */
 		latexStandardWriter(wrlatex, latex, referenceLink);
