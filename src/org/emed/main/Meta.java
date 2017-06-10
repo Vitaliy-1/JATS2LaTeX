@@ -98,8 +98,12 @@ public class Meta {
         		articleMeta.getAbstractEng().put(titleNode.getTextContent(), pNode.getTextContent().trim());
         	}
         } else if ((abstractNode != null) && (abstractNode.getAttributes() == null || abstractNode.getAttributes().getNamedItem("abstract-type").getNodeValue().equals("short"))) {
-        	Node abstractShort = (Node) xPath.compile("p").evaluate(abstractNode, XPathConstants.NODE);
-        	articleMeta.getAbstractEng().put(null, abstractShort.getTextContent().trim());
+        	Node abstractShort = (Node) xPath.compile("p|sec/p").evaluate(abstractNode, XPathConstants.NODE);
+        	try {
+				articleMeta.getAbstractEng().put(null, abstractShort.getTextContent().trim());
+			} catch (Exception e) {
+				System.err.println("Cannot find abstract. Error code for developers: " + e);
+			}
         }
         
         
@@ -114,8 +118,12 @@ public class Meta {
         		articleMeta.getAbstractUkr().put(titleNode.getTextContent(), pNode.getTextContent().trim());
         	}
         } else if ((abstractTransNode != null) && (abstractTransNode.getAttributes() != null) && (abstractTransNode.getAttributes().getNamedItem("abstract-type") == null || abstractTransNode.getAttributes().getNamedItem("abstract-type").getNodeValue().equals("short"))) {
-        	Node abstractShort = (Node) xPath.compile("p").evaluate(abstractTransNode, XPathConstants.NODE);
-        	articleMeta.getAbstractUkr().put(null, abstractShort.getTextContent().trim());
+        	Node abstractShort = (Node) xPath.compile("p|sec/p").evaluate(abstractTransNode, XPathConstants.NODE);
+        	try {
+				articleMeta.getAbstractUkr().put(null, abstractShort.getTextContent().trim());
+			} catch (Exception e) {
+				System.err.println("Cannot find abstract. Error code for developers: " + e);
+			}
         }
         
         // set Journal title
