@@ -1,0 +1,1816 @@
+This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2016.7.5)  24 APR 2017 22:14
+entering extended mode
+**./article_english.tex
+(article_english.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+
+("C:\Program Files\MiKTeX 2.9\tex\xelatex\xetexconfig\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\polyglossia\polyglossia.sty"
+Package: polyglossia 2015/03/25 v1.42.4 Alternative to Babel for XeLaTeX and Lu
+aLaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count90
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\makecmds\makecmds.sty"
+Package: makecmds 2009/09/03 v1.0a extra command making commands
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+)
+\XKV@depth=\count91
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty"
+Package: expl3 2016/05/18 v6512 L3 programming layer (loader) 
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex"
+Package: expl3 2016/05/18 v6512 L3 programming layer (code)
+L3 Module: l3bootstrap 2016/02/12 v6412 L3 Bootstrap code
+L3 Module: l3names 2016/03/11 v6433 L3 Namespace for primitives
+L3 Module: l3basics 2015/11/22 v6315 L3 Basic definitions
+L3 Module: l3expan 2015/09/10 v5983 L3 Argument expansion
+L3 Module: l3tl 2016/03/26 v6465 L3 Token lists
+L3 Module: l3str 2016/03/24 v6441 L3 Strings
+L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
+L3 Module: l3int 2016/03/24 v6441 L3 Integers
+\c_max_int=\count92
+\l_tmpa_int=\count93
+\l_tmpb_int=\count94
+\g_tmpa_int=\count95
+\g_tmpb_int=\count96
+L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
+L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
+\g__prg_map_int=\count97
+L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
+L3 Module: l3token 2016/04/03 v6470 L3 Experimental token manipulation
+L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
+L3 Module: l3msg 2016/03/26 v6464 L3 Messages
+L3 Module: l3file 2016/03/25 v6458 L3 File and I/O operations
+\l_iow_line_count_int=\count98
+\l__iow_target_count_int=\count99
+\l__iow_current_line_int=\count100
+\l__iow_current_word_int=\count101
+\l__iow_current_indentation_int=\count102
+L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
+\c_zero_dim=\dimen111
+\c_max_dim=\dimen112
+\l_tmpa_dim=\dimen113
+\l_tmpb_dim=\dimen114
+\g_tmpa_dim=\dimen115
+\g_tmpb_dim=\dimen116
+\c_zero_skip=\skip43
+\c_max_skip=\skip44
+\l_tmpa_skip=\skip45
+\l_tmpb_skip=\skip46
+\g_tmpa_skip=\skip47
+\g_tmpb_skip=\skip48
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
+\g__keyval_level_int=\count103
+\l_keys_choice_int=\count104
+L3 Module: l3fp 2016/03/26 v6465 L3 Floating points
+\c__fp_leading_shift_int=\count105
+\c__fp_middle_shift_int=\count106
+\c__fp_trailing_shift_int=\count107
+\c__fp_big_leading_shift_int=\count108
+\c__fp_big_middle_shift_int=\count109
+\c__fp_big_trailing_shift_int=\count110
+\c__fp_Bigg_leading_shift_int=\count111
+\c__fp_Bigg_middle_shift_int=\count112
+\c__fp_Bigg_trailing_shift_int=\count113
+L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
+\c_empty_box=\box26
+\l_tmpa_box=\box27
+\l_tmpb_box=\box28
+\g_tmpa_box=\box29
+\g_tmpb_box=\box30
+L3 Module: l3coffins 2016/05/17 v6508 L3 Coffin code layer
+\l__coffin_internal_box=\box31
+\l__coffin_internal_dim=\dimen117
+\l__coffin_offset_x_dim=\dimen118
+\l__coffin_offset_y_dim=\dimen119
+\l__coffin_x_dim=\dimen120
+\l__coffin_y_dim=\dimen121
+\l__coffin_x_prime_dim=\dimen122
+\l__coffin_y_prime_dim=\dimen123
+\c_empty_coffin=\box32
+\l__coffin_aligned_coffin=\box33
+\l__coffin_aligned_internal_coffin=\box34
+\l_tmpa_coffin=\box35
+\l_tmpb_coffin=\box36
+\l__coffin_display_coffin=\box37
+\l__coffin_display_coord_coffin=\box38
+\l__coffin_display_pole_coffin=\box39
+\l__coffin_display_offset_dim=\dimen124
+\l__coffin_display_x_dim=\dimen125
+\l__coffin_display_y_dim=\dimen126
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
+L3 Module: l3candidates 2016/05/13 v6484 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen127
+\l__box_bottom_dim=\dimen128
+\l__box_left_dim=\dimen129
+\l__box_right_dim=\dimen130
+\l__box_top_new_dim=\dimen131
+\l__box_bottom_new_dim=\dimen132
+\l__box_left_new_dim=\dimen133
+\l__box_right_new_dim=\dimen134
+\l__box_internal_box=\box40
+\l__coffin_bounding_shift_dim=\dimen135
+\l__coffin_left_corner_dim=\dimen136
+\l__coffin_right_corner_dim=\dimen137
+\l__coffin_bottom_corner_dim=\dimen138
+\l__coffin_top_corner_dim=\dimen139
+\l__coffin_scaled_total_height_dim=\dimen140
+\l__coffin_scaled_width_dim=\dimen141
+L3 Module: l3luatex 2016/03/26 v6465 L3 Experimental LuaTeX-specific functions
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3xdvipdfmx.def"
+File: l3xdvidpfmx.def 2016/03/26 v6465 L3 Experimental driver: xdvipdfmx
+\l__driver_tmp_box=\box41
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty"
+Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count114
+\l__xparse_m_args_int=\count115
+\l__xparse_mandatory_args_int=\count116
+\l__xparse_processor_int=\count117
+\l__xparse_v_nesting_int=\count118
+)
+Package: fontspec 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec-xetex.sty"
+Package: fontspec-xetex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
+X
+\l_fontspec_script_int=\count119
+\l_fontspec_language_int=\count120
+\l_fontspec_strnum_int=\count121
+\l__fontspec_tmpa_dim=\dimen142
+\l__fontspec_tmpb_dim=\dimen143
+\l__fontspec_tmpc_dim=\dimen144
+\g__file_internal_ior=\read1
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1enc.def"
+File: eu1enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
+)
+LaTeX Font Info:    Try loading font information for EU1+lmr on input line 105.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1lmr.fd"
+File: eu1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+("C:\Program Files\MiKTeX 2.9\tex\xelatex\xunicode\xunicode.sty"
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
+other characters in Unicode lower plane
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tipa\t3enc.def"
+File: t3enc.def 2001/12/31 T3 encoding
+LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1lmss.fd"
+File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+\tipaTiiicode=\count122
+\tipasavetokens=\toks18
+\tipachecktokens=\toks19
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 96.
+
+("C:\Program Files\MiKTeX 2.9\tex\xelatex\xetex-def\xetex.def"
+File: xetex.def 2016/04/06 v4.08 LaTeX color/graphics driver for XeTeX (TeX Liv
+e/RRM/JK)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+\Gin@req@height=\dimen145
+\Gin@req@width=\dimen146
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__fontspec_post_arg:w with sig. 'mmO{}' on line 353.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'om' on line 355.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'om' on line 365.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'om' on line 375.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'om' on line 385.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'om' on line 399.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'om' on line 407.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'om' on line 415.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'om' on line 423.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mom' on line 437.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mom' on line 453.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 467.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 529.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 540.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 548.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 556.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 577.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 586.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 590.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 594.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 599.
+.................................................
+\l__fontspec_tmp_int=\count123
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec.cfg")
+LaTeX Info: Redefining \itshape on input line 2705.
+LaTeX Info: Redefining \slshape on input line 2710.
+LaTeX Info: Redefining \scshape on input line 2715.
+LaTeX Info: Redefining \upshape on input line 2720.
+\l__fontspec_em_int=\count124
+\l__fontspec_emdef_int=\count125
+LaTeX Info: Redefining \em on input line 2736.
+LaTeX Info: Redefining \emph on input line 2742.
+LaTeX Info: Redefining \- on input line 2746.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 2841.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 2845.
+.................................................
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+\xpg@normalclass=\XeTeXcharclass1
+)
+\g__fontspec_family_Cambria_int=\count126
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Cambria(0)' created for font 'Cambria' with options
+. [Ligatures=TeX].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->"Cambria/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->"Cambria/OT:script=latn;language=DFLT;mapping=tex-text;+smcp;"- 'bold'
+. (bx/n) with NFSS spec.:
+. <->"Cambria/B/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->"Cambria/B/OT:script=latn;language=DFLT;mapping=tex-text;+smcp;"-
+. 'italic' (m/it) with NFSS spec.:
+. <->"Cambria/I/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->"Cambria/I/OT:script=latn;language=DFLT;mapping=tex-text;+smcp;"- 'bold
+. italic' (bx/it) with NFSS spec.:
+. <->"Cambria/BI/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->"Cambria/BI/OT:script=latn;language=DFLT;mapping=tex-text;+smcp;"
+.................................................
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Liberation Mono does not contain any OpenType `Script' information.
+.................................................
+\g__fontspec_family_LiberationMono_int=\count127
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LiberationMono(0)' created for font 'Liberation Mono' with
+. options [WordSpace={1,0,0},PunctuationSpace=WordSpace].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.: <->"Liberation Mono/OT:"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
+. - 'bold' (bx/n) with NFSS spec.: <->"Liberation Mono/B/OT:"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
+. - 'italic' (m/it) with NFSS spec.: <->"Liberation Mono/I/OT:"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
+. - 'bold italic' (bx/it) with NFSS spec.: <->"Liberation Mono/BI/OT:"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
+.................................................
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\polyglossia\gloss-english.ldf"
+File: gloss-english.ldf polyglossia: module for english
+)
+Package polyglossia Info: Default language is english.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.sty"
+Package: microtype 2016/05/14 v2.6a Micro-typographical refinements (RS)
+\MT@toks=\toks20
+\MT@count=\count128
+LaTeX Info: Redefining \textls on input line 774.
+\MT@outer@kern=\dimen147
+LaTeX Info: Redefining \textmicrotypecontext on input line 1310.
+\MT@listname@count=\count129
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype-xetex.def"
+File: microtype-xetex.def 2016/05/14 v2.6a Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 255.
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.cfg"
+File: microtype.cfg 2016/05/14 v2.6a microtype main configuration file (RS)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count130
+\rotFPtop=\skip49
+\rotFPbot=\skip50
+\rot@float@box=\box42
+\rot@mess@toks=\toks21
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen148
+\captionmargin@=\dimen149
+\captionwidth=\dimen150
+\caption@tempdima=\dimen151
+\caption@indent=\dimen152
+\caption@parindent=\dimen153
+\caption@hangindent=\dimen154
+)
+\c@ContinuedFloat=\count131
+Package caption Info: rotating package is loaded.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\preprint\authblk.sty"
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip51
+\@affilsep=\skip52
+\c@Maxaffil=\count132
+\c@authors=\count133
+\c@affil=\count134
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\threeparttable\threeparttable.sty"
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box43
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tablefootnote\tablefootnote.sty"
+Package: tablefootnote 2014/01/26 v1.1c Table foot notes (HMM)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\letltxmacro.sty"
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xifthen\xifthen.sty"
+Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count135
+\calc@Bcount=\count136
+\calc@Adimen=\dimen155
+\calc@Bdimen=\dimen156
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count137
+\calc@Cskip=\skip55
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ifmtarg\ifmtarg.sty"
+Package: ifmtarg 2009/09/02 v1.2a check for an empty argument
+)))
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen157
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
+\LTchunksize=\count138
+\LTcapwidth=\dimen158
+\LT@head=\box44
+\LT@firsthead=\box45
+\LT@foot=\box46
+\LT@lastfoot=\box47
+\LT@cols=\count139
+\LT@rows=\count140
+\c@LT@tables=\count141
+\c@LT@chunks=\count142
+\LT@p@ftn=\toks22
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
+\wrapoverhang=\dimen159
+\WF@size=\dimen160
+\c@WF@wrappedlines=\count143
+\WF@box=\box48
+\WF@everypar=\toks23
+Package: wrapfig 2003/01/31  v 3.6
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen161
+\extrarowheight=\dimen162
+\NC@list=\toks24
+\extratabsurround=\skip60
+\backup@length=\skip61
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen163
+\lightrulewidth=\dimen164
+\cmidrulewidth=\dimen165
+\belowrulesep=\dimen166
+\belowbottomsep=\dimen167
+\aboverulesep=\dimen168
+\abovetopsep=\dimen169
+\cmidrulesep=\dimen170
+\cmidrulekern=\dimen171
+\defaultaddspace=\dimen172
+\@cmidla=\count144
+\@cmidlb=\count145
+\@aboverulesep=\dimen173
+\@belowrulesep=\dimen174
+\@thisruleclass=\count146
+\@lastruleclass=\count147
+\@thisrulewidth=\dimen175
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\siunitx.sty"
+Package: siunitx 2016/03/01 v2.6q A comprehensive (SI) units package
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks25
+\ex@=\dimen176
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3packages\l3keys2e\l3keys2e.sty"
+Package: l3keys2e 2016/05/18 v6512 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box49
+\l__siunitx_tmp_dim=\dimen177
+\l__siunitx_tmp_int=\count148
+\l__siunitx_number_mantissa_length_int=\count149
+\l__siunitx_number_uncert_length_int=\count150
+\l__siunitx_round_int=\count151
+\l__siunitx_process_decimal_int=\count152
+\l__siunitx_process_uncertainty_int=\count153
+\l__siunitx_process_fixed_int=\count154
+\l__siunitx_process_integer_min_int=\count155
+\l__siunitx_process_precision_int=\count156
+\l__siunitx_group_min_int=\count157
+\l__siunitx_angle_marker_box=\box50
+\l__siunitx_angle_unit_box=\box51
+\l__siunitx_angle_marker_dim=\dimen178
+\l__siunitx_angle_unit_dim=\dimen179
+\l__siunitx_unit_int=\count158
+\l__siunitx_unit_denominator_int=\count159
+\l__siunitx_unit_numerator_int=\count160
+\l__siunitx_unit_prefix_int=\count161
+\l__siunitx_unit_prefix_base_int=\count162
+\l__siunitx_unit_prefix_gram_int=\count163
+\l__siunitx_number_product_int=\count164
+\c__siunitx_one_fill_skip=\skip62
+\l__siunitx_table_unit_align_skip=\skip63
+\l__siunitx_table_exponent_dim=\dimen180
+\l__siunitx_table_integer_dim=\dimen181
+\l__siunitx_table_mantissa_dim=\dimen182
+\l__siunitx_table_marker_dim=\dimen183
+\l__siunitx_table_result_dim=\dimen184
+\l__siunitx_table_uncert_dim=\dimen185
+\l__siunitx_table_fill_pre_dim=\dimen186
+\l__siunitx_table_fill_post_dim=\dimen187
+\l__siunitx_table_fill_mid_dim=\dimen188
+\l__siunitx_table_pre_box=\box52
+\l__siunitx_table_post_box=\box53
+\l__siunitx_table_mantissa_box=\box54
+\l__siunitx_table_result_box=\box55
+\l__siunitx_table_number_align_skip=\skip64
+\l__siunitx_table_text_align_skip=\skip65
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareBinaryPrefix with sig. 'mmm' on line 7218.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPostPower with sig. 'mm' on line 7221.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrefix with sig. 'mmm' on line 7224.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrePower with sig. 'mm' on line 7227.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIQualifier with sig. 'mm' on line 7230.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnit with sig. 'O{}mm' on line 7233.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnitWithOptions with sig. 'mmm' on line 7236.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ang with sig. 'o>{\SplitArgument {2}{;}}m' on line 7251.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \num with sig. 'om' on line 7260.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numlist with sig. 'o>{\SplitList {;}}m' on line 7269.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numrange with sig. 'omm' on line 7278.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIlist with sig. 'o>{\SplitList {;}}mm' on line 7290.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIrange with sig. 'ommm' on line 7302.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SI with sig. 'omom' on line 7314.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \sisetup with sig. 'm' on line 7317.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tablenum with sig. 'om' on line 7332.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \si with sig. 'om' on line 7344.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_num:w with sig. 'om' on line 7391.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_numrange:w with sig. 'omm' on line
+. 7393.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SI:w with sig. 'omom' on line 7395.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SIlist:w with sig. 'omm' on line 7397.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SIrange:w with sig. 'ommm' on line
+. 7399.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_si:w with sig. 'om' on line 7400.
+.................................................
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\translator.sty"
+Package: translator 2010/06/12 ver 1.10
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\translator-langu
+age-mappings.tex"))) ("C:\Program Files\MiKTeX 2.9\tex\latex\t2\mathtext.sty"
+Package: mathtext 1999/01/28 v1.0 transparent text-and-math defs
+LaTeX Info: Redefining \halign on input line 111.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\lineno\lineno.sty"
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
+\linenopenalty=\count165
+\output=\toks26
+\linenoprevgraf=\count166
+\linenumbersep=\dimen189
+\linenumberwidth=\dimen190
+\c@linenumber=\count167
+\c@pagewiselinenumber=\count168
+\c@LN@truepage=\count169
+\c@internallinenumber=\count170
+\c@internallinenumbers=\count171
+\quotelinenumbersep=\dimen191
+\bframerule=\dimen192
+\bframesep=\dimen193
+\bframebox=\box56
+LaTeX Info: Redefining \\ on input line 3056.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2016/05/21 v6.83p Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package hobsub Info: Skipping package `letltxmacro' (already loaded).
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen194
+\Hy@linkcounter=\count172
+\Hy@pagecounter=\count173
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2016/05/21 v6.83p Hyperref: PDFDocEncoding definition (HO)
+\symPD1letters=\mathgroup4
+)
+\Hy@SavedSpaceFactor=\count174
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4486.
+Package hyperref Info: Link nesting OFF on input line 4491.
+Package hyperref Info: Hyper index ON on input line 4494.
+Package hyperref Info: Plain pages OFF on input line 4501.
+Package hyperref Info: Backreferencing OFF on input line 4506.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4735.
+\c@Hy@tempcnt=\count175
+LaTeX Info: Redefining \url on input line 5088.
+\XeTeXLinkMargin=\dimen195
+\Fld@menulength=\count176
+\Field@Width=\dimen196
+\Fld@charsize=\dimen197
+Package hyperref Info: Hyper figures OFF on input line 6342.
+Package hyperref Info: Link nesting OFF on input line 6347.
+Package hyperref Info: Hyper index ON on input line 6350.
+Package hyperref Info: backreferencing OFF on input line 6357.
+Package hyperref Info: Link coloring OFF on input line 6362.
+Package hyperref Info: Link coloring with OCG OFF on input line 6367.
+Package hyperref Info: PDF/A mode OFF on input line 6372.
+LaTeX Info: Redefining \ref on input line 6412.
+LaTeX Info: Redefining \pageref on input line 6416.
+\Hy@abspage=\count177
+\c@Item=\count178
+\c@Hfootnote=\count179
+)
+
+Package hyperref Message: Driver (autodetected): hxetex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hxetex.def"
+File: hxetex.def 2016/05/21 v6.83p Hyperref driver for XeTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\puenc.def"
+File: puenc.def 2016/05/21 v6.83p Hyperref: PDF Unicode definition (HO)
+\symPUletters=\mathgroup5
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\stringenc.sty"
+Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box57
+\c@Hy@AnnotLevel=\count180
+\HyField@AnnotCount=\count181
+\Fld@listcount=\count182
+\c@bookmark@seq@number=\count183
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
+(rerunfilecheck)             (e.g. pdfTeX or LuaTeX with package `pdftexcmds').
+
+(rerunfilecheck)             Therefore file contents cannot be checked efficien
+tly
+(rerunfilecheck)             and the loading of the package is aborted.
+)
+\Hy@SectionHShift=\skip66
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tabulary\tabulary.sty"
+Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
+\TY@count=\count184
+\TY@linewidth=\dimen198
+\tymin=\dimen199
+\tymax=\dimen256
+\TY@tablewidth=\dimen257
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip67
+\f@ncyO@elh=\skip68
+\f@ncyO@erh=\skip69
+\f@ncyO@olh=\skip70
+\f@ncyO@orh=\skip71
+\f@ncyO@elf=\skip72
+\f@ncyO@erf=\skip73
+\f@ncyO@olf=\skip74
+\f@ncyO@orf=\skip75
+)
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 33.
+
+(article_english.aux)
+\openout1 = `article_english.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 36.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 36.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\tipa\t3cmr.fd"
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(48.0pt, 520.295pt, 46.0pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=520.295pt
+* \textheight=556.47656pt
+* \oddsidemargin=-24.26999pt
+* \evensidemargin=-24.26999pt
+* \topmargin=-13.87262pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+.................................................
+. fontspec info: "setup-math"
+. 
+. Adjusting the maths setup (use [no-math] to avoid this).
+.................................................
+\symlegacymaths=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 36.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 36.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 36.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 36.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 36.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 36.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 36.
+LaTeX Font Info:    Redeclaring math accent \check on input line 36.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 36.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 36.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 36.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 36.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 36.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> EU1/Cambria(0)/m/n on input line 36.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 36.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> EU1/Cambria(0)/m/n on input line 36.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  EU1/Cambria(0)/m/n --> EU1/Cambria(0)/m/n on input line
+ 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> EU1/Cambria(0)/m/it on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> EU1/Cambria(0)/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> EU1/LiberationMono(0)/m/n on input lin
+e 36.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  EU1/Cambria(0)/m/n --> EU1/Cambria(0)/bx/n on input lin
+e 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> EU1/Cambria(0)/bx/it on input line 36
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> EU1/LiberationMono(0)/bx/n on input li
+ne 36.
+LaTeX Info: Redefining \microtypecontext on input line 36.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `Cambria' (encoding: EU1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)
+Package caption Info: threeparttable package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\symTS1letters=\mathgroup7
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\translator
+-basic-dictionary\translator-basic-dictionary-English.dict"
+Dictionary: translator-basic-dictionary, Language: English 
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\siunitx-abbreviations.cfg"
+File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
+)
+\AtBeginShipoutBox=\box58
+Package hyperref Info: Link coloring OFF on input line 36.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count185
+)
+LaTeX Info: Redefining \ref on input line 36.
+LaTeX Info: Redefining \pageref on input line 36.
+LaTeX Info: Redefining \nameref on input line 36.
+
+(article_english.out) (article_english.out)
+\@outlinefile=\write3
+\openout3 = `article_english.out'.
+
+\c__siunitx_mathsf_int=\count186
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 36.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 36.
+LaTeX Font Info:    Try loading font information for PD1+Cambria(0) on input li
+ne 36.
+LaTeX Font Info:    No file PD1Cambria(0).fd. on input line 36.
+
+
+LaTeX Font Warning: Font shape `PD1/Cambria(0)/m/n' undefined
+(Font)              using `PD1/pdf/m/n' instead on input line 36.
+
+LaTeX Font Info:    Try loading font information for PU+Cambria(0) on input lin
+e 36.
+LaTeX Font Info:    No file PUCambria(0).fd. on input line 36.
+
+LaTeX Font Warning: Font shape `PU/Cambria(0)/m/n' undefined
+(Font)              using `PU/pdf/m/n' instead on input line 36.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-cmr.cfg"
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+LaTeX Font Info:    Try loading font information for TS1+Cambria(0) on input li
+ne 36.
+LaTeX Font Info:    No file TS1Cambria(0).fd. on input line 36.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 36.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+
+LaTeX Font Warning: Font shape `TS1/Cambria(0)/m/n' undefined
+(Font)              using `TS1/cmr/m/n' instead on input line 36.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textquotestraightbase '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textquotestraightdblbase '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texttwelveudash '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textthreequartersemdash '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textquotesingle '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textasteriskcentered '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textoneoldstyle '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textthreeoldstyle '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textfouroldstyle '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textsevenoldstyle '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textlangle '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textrangle '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textminus '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texttildelow '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textdagger '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textdaggerdbl '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textbullet '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textcelsius '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textcolonmonetary '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texttrademark '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textcopyright '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textordfeminine '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textlnot '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textregistered '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textdegree '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textpm '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texttwosuperior '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textthreesuperior '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textperiodcentered '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textonesuperior '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textordmasculine '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texteuro '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texttimes '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textdiv '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+Package microtype Info: Loading generic settings for font family
+(microtype)             `Cambria' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textminus '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texttrademark '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textcopyright '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textregistered '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textdegree '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textminus '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texttrademark '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textcopyright '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textregistered '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textdegree '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmss' (encoding: EU1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+\c__siunitx_mathtt_int=\count187
+Package microtype Info: Loading generic settings for font family
+(microtype)             `LiberationMono' (encoding: EU1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+! LaTeX Error: File `logo' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 \end{@twocolumnfalse}]
+                           
+I could not locate the file with any of these extensions:
+.pdf,.PDF,.eps,.EPS,.mps,.MPS,.ps,.PS,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2
+,.jpf,.JPF,.bmp,.BMP,.pict,.PICT,.psd,.PSD,.mac,.MAC,.TGA,.tga,.gif,.GIF,.tif,.
+TIF,.tiff,.TIFF,
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 \end{@twocolumnfalse}]
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 74.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 74.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 74.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textminus '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texttrademark '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textcopyright '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textregistered '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textdegree '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textminus '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texttrademark '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textcopyright '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textregistered '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textdegree '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textminus '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texttrademark '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textcopyright '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textregistered '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textdegree '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textminus '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texttrademark '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textcopyright '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textregistered '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textdegree '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `textcomp'.
+
+
+LaTeX Warning: Optional argument of \twocolumn too tall on page 1.
+
+
+Overfull \vbox (20.27525pt too high) has occurred while \output is active []
+
+
+
+LaTeX Warning: Text page 1 contains only floats.
+
+
+Overfull \vbox (20.27525pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (6.27525pt too high) has occurred while \output is active []
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
+File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
+
+)
+[1
+
+
+]
+Underfull \hbox (badness 6658) in paragraph at lines 79--80
+[]\EU1/Cambria(0)/m/n/10 Clinical-psychopathological research was conducted
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 79--80
+\EU1/Cambria(0)/m/n/10 by mental and behavioral disorders of cluster F43 - ”re-
+
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 80--81
+\EU1/Cambria(0)/m/n/10 of the same age. The asthenia group included patients
+ []
+
+
+Underfull \hbox (badness 2680) in paragraph at lines 80--81
+\EU1/Cambria(0)/m/n/10 depressive and asthenic-hypochondriac syndromes were
+ []
+
+File: fig1.png Graphic file (type QTm)
+<use  "fig1.png" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+File: fig2.png Graphic file (type QTm)
+
+<use  "fig2.png" >
+Underfull \hbox (badness 1168) in paragraph at lines 97--98
+[]\EU1/Cambria(0)/m/n/10 The indices of psychological testing of asthenia and
+ []
+
+
+Underfull \hbox (badness 4543) in paragraph at lines 97--98
+\EU1/Cambria(0)/m/n/10 anxiety groups showed significant exceeding values (U
+ []
+
+File: fig3.png Graphic file (type QTm)
+<use  "fig3.png" > [3] [4]
+File: fig4.png Graphic file (type QTm)
+ <use  "fig4.png" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: fig5.png Graphic file (type QTm)
+
+<use  "fig5.png" >
+File: fig6.png Graphic file (type QTm)
+ <use  "fig6.png" >
+Underfull \vbox (badness 5147) has occurred while \output is active []
+
+ [5]
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 6157) in paragraph at lines 142--143
+[]\EU1/Cambria(0)/m/n/10 Possible neurophysiological mechanisms of the re-
+ []
+
+(article_english.bbl
+Underfull \hbox (badness 5667) in paragraph at lines 23--27
+\EU1/Cambria(0)/m/n/10 ness and High Suicide Risk?  Psychosomatics.
+ []
+
+
+Underfull \hbox (badness 6157) in paragraph at lines 29--33
+[]\EU1/Cambria(0)/m/n/10 Feu M, Fergusson K.  Sensory impairment and
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 29--33
+\EU1/Cambria(0)/m/n/10 mental health.  Advances in Psychiatric Treatment.
+ []
+
+[8]
+Underfull \hbox (badness 2401) in paragraph at lines 56--59
+[]\EU1/Cambria(0)/m/n/10 Raygorodskiy D.  Prakticheskaya psihodiagnostika:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--109
+\EU1/Cambria(0)/m/n/10 J, Tanguay P.  Midlatency auditory evoked re-
+ []
+
+
+Underfull \hbox (badness 7030) in paragraph at lines 103--109
+\EU1/Cambria(0)/m/n/10 sponses: P1 abnormalities in adult autistic sub-
+ []
+
+
+Underfull \hbox (badness 6032) in paragraph at lines 103--109
+\EU1/Cambria(0)/m/n/10 jects.  Electroencephalography and Clinical Neu-
+ []
+
+
+Underfull \hbox (badness 7558) in paragraph at lines 103--109
+\EU1/Cambria(0)/m/n/10 rophysiology. 1992;84:164–171.  Available from:
+ []
+
+
+Underfull \hbox (badness 4242) in paragraph at lines 136--141
+\EU1/Cambria(0)/m/n/10 troencephalogr Clin Neurophysiol. 1985;61(6):519–
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 143--148
+[]\EU1/Cambria(0)/m/n/10 Polich J, Alexander J, Bauer L.  P300 topography
+ []
+
+
+Underfull \hbox (badness 4531) in paragraph at lines 143--148
+\EU1/Cambria(0)/m/n/10 of amplitude/latency correlations.  Brain Topogr.
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 143--148
+\EU1/Cambria(0)/m/n/10 1997;9(4):275–282.  Available from: []$[][][][][] [] [] 
+[] [][][] []
+ []
+
+
+Underfull \hbox (badness 1789) in paragraph at lines 157--161
+\EU1/Cambria(0)/m/n/10 Clin Neurophysiol. 1993;88(3):210–219.  Available
+ []
+
+
+Underfull \hbox (badness 3417) in paragraph at lines 163--166
+[]\EU1/Cambria(0)/m/n/10 Gnezditskiy V.  Vyizvannyie potentsialyi mozga v
+ []
+
+[9]
+Underfull \hbox (badness 5578) in paragraph at lines 174--178
+[]\EU1/Cambria(0)/m/n/10 McCarthy G, Nobre A.  Modulation of semantic
+ []
+
+
+Underfull \hbox (badness 7814) in paragraph at lines 174--178
+\EU1/Cambria(0)/m/n/10 processing by spatial selective attention.  Elec-
+ []
+
+
+Underfull \hbox (badness 4242) in paragraph at lines 174--178
+\EU1/Cambria(0)/m/n/10 troencephalogr Clin Neurophysiol. 1993;88(3):210–
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 193--198
+\EU1/Cambria(0)/m/n/10 tentials as indicator of brain serotonergic activity—
+ []
+
+
+Underfull \hbox (badness 4193) in paragraph at lines 193--198
+\EU1/Cambria(0)/m/n/10 first evidence in behaving cats.  Biol Psychiatry.
+ []
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 200--205
+[]\EU1/Cambria(0)/m/n/10 Kevanishvili Z, Davitashvili O.  Korotko- sredne- i
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 200--205
+\EU1/Cambria(0)/m/n/10 diometriya po sluhovyim vyizvannyim potentsialam.
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
+ [10
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
+ (article_english.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 146.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 146.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 27586 strings out of 428410
+ 514616 string characters out of 3160659
+ 569202 words of memory out of 3000000
+ 30675 multiletter control sequences out of 15000+200000
+ 10567 words of font info for 73 fonts, out of 3000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 54i,11n,92p,10422b,853s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on article_english.pdf (10 pages).

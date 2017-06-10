@@ -54,6 +54,10 @@ public class MetaGost {
 		wrobj.newLine();
 		wrobj.write("\\usepackage{mathtext}");
 		wrobj.newLine();
+		wrobj.write("\\usepackage[hyphens]{url}");
+		wrobj.newLine();
+		wrobj.write("\\urlstyle{same}");
+		wrobj.newLine();
 		wrobj.write("\\usepackage{lineno,hyperref}");
 		wrobj.newLine();
 		wrobj.write("\\usepackage{tabulary}");

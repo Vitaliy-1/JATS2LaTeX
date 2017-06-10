@@ -1,5 +1,11 @@
 package org.emed.main;
-
+/**
+ * @file /src/org/emed/main/Meta.java
+ *
+ * Copyright (c) 2017 Vitaliy Bezsheiko
+ * 
+ * Distributed under the GNU GPL v3.
+ */
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
@@ -89,11 +95,11 @@ public class Meta {
         	for (int i = 0; i < abstractSecs.getLength(); i++) {
         		Node titleNode = (Node) xPath.compile("title").evaluate(abstractSecs.item(i), XPathConstants.NODE);
         		Node pNode = (Node) xPath.compile("p").evaluate(abstractSecs.item(i), XPathConstants.NODE);
-        		articleMeta.getAbstractEng().put(titleNode.getTextContent(), pNode.getTextContent());
+        		articleMeta.getAbstractEng().put(titleNode.getTextContent(), pNode.getTextContent().trim());
         	}
         } else if ((abstractNode != null) && (abstractNode.getAttributes() == null || abstractNode.getAttributes().getNamedItem("abstract-type").getNodeValue().equals("short"))) {
         	Node abstractShort = (Node) xPath.compile("p").evaluate(abstractNode, XPathConstants.NODE);
-        	articleMeta.getAbstractEng().put(null, abstractShort.getTextContent());
+        	articleMeta.getAbstractEng().put(null, abstractShort.getTextContent().trim());
         }
         
         
@@ -105,11 +111,11 @@ public class Meta {
         	for (int i = 0; i < abstractSecs.getLength(); i++) {
         		Node titleNode = (Node) xPath.compile("title").evaluate(abstractSecs.item(i), XPathConstants.NODE);
         		Node pNode = (Node) xPath.compile("p").evaluate(abstractSecs.item(i), XPathConstants.NODE);
-        		articleMeta.getAbstractUkr().put(titleNode.getTextContent(), pNode.getTextContent());
+        		articleMeta.getAbstractUkr().put(titleNode.getTextContent(), pNode.getTextContent().trim());
         	}
-        } else if ((abstractTransNode != null) && (abstractTransNode.getAttributes() == null) && (abstractTransNode.getAttributes().getNamedItem("abstract-type") == null || abstractTransNode.getAttributes().getNamedItem("abstract-type").getNodeValue().equals("short"))) {
+        } else if ((abstractTransNode != null) && (abstractTransNode.getAttributes() != null) && (abstractTransNode.getAttributes().getNamedItem("abstract-type") == null || abstractTransNode.getAttributes().getNamedItem("abstract-type").getNodeValue().equals("short"))) {
         	Node abstractShort = (Node) xPath.compile("p").evaluate(abstractTransNode, XPathConstants.NODE);
-        	articleMeta.getAbstractUkr().put(null, abstractShort.getTextContent());
+        	articleMeta.getAbstractUkr().put(null, abstractShort.getTextContent().trim());
         }
         
         // set Journal title
@@ -249,6 +255,11 @@ public class Meta {
         Node udc = (Node) xPath.compile("/article/front/article-meta/article-id[@pub-id-type='other']").evaluate(document, XPathConstants.NODE);
         if (udc != null) {
         	articleMeta.setUdc(udc.getTextContent());
+        }
+        // set doi
+        Node doi = (Node) xPath.compile("/article/front/article-meta/article-id[@pub-id-type='doi']").evaluate(document, XPathConstants.NODE);
+        if (doi != null) {
+        	articleMeta.setDoi(doi.getTextContent());
         }
 		return articleMeta;
 	}	

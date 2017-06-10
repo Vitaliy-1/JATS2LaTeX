@@ -2,7 +2,8 @@ package org.emed.classes;
 
 import java.util.ArrayList;
 
-public class Figure extends SecContent {
+public class Figure extends Section {
+	private String title;
 	private String label;
 	private String link;
 	private String id;
