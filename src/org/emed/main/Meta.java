@@ -98,8 +98,12 @@ public class Meta {
         		articleMeta.getAbstractEng().put(titleNode.getTextContent(), pNode.getTextContent().trim());
         	}
         } else if ((abstractNode != null) && (abstractNode.getAttributes() == null || abstractNode.getAttributes().getNamedItem("abstract-type").getNodeValue().equals("short"))) {
-        	Node abstractShort = (Node) xPath.compile("p").evaluate(abstractNode, XPathConstants.NODE);
-        	articleMeta.getAbstractEng().put(null, abstractShort.getTextContent().trim());
+        	Node abstractShort = (Node) xPath.compile("p|sec/p").evaluate(abstractNode, XPathConstants.NODE);
+        	try {
+				articleMeta.getAbstractEng().put(null, abstractShort.getTextContent().trim());
+			} catch (Exception e) {
+				System.err.println("Cannot find abstract. Error code for developers: " + e);
+			}
         }
         
         
