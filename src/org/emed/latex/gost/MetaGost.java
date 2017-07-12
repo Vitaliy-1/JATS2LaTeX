@@ -96,7 +96,7 @@ public class MetaGost {
 			wrobj.write("\\smash\\\\");
 			wrobj.newLine();
 		}
-		wrobj.write("\\bfseries \\qquad " + "Психосоматична медицина та загальна практика" + "\\\\[0.5cm]{");
+		wrobj.write("\\bfseries \\qquad " + "Психосоматична медицина та загальна практика" + "\\\\[0.7cm]{");
 		wrobj.newLine();
 		wrobj.write("\\flushleft\\small{УДК: " + articleMeta.getUdc() + "\\hfill }\\\\[0.4cm]}{");
 		wrobj.newLine();

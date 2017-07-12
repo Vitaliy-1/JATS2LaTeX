@@ -5,8 +5,11 @@ Java project that can be used for transformation of Journal Article Tag Suite XM
 JATS2LaTeX accepts JATS XML as input and produces document in LaTeX format and also a bibtex file for bibliography.
 
 ## How to use?
-1. Downlaod the latest release: https://github.com/Vitaliy-1/JATS2LaTeX/releases
+1. Download the latest release: https://github.com/Vitaliy-1/JATS2LaTeX/releases
 2. Run as java jar executable file. For example, if jar and article file are both lie in D:\latex, just type from Windows cmd (win + r -> cmd): `D:` -> `cd latex` -> `java -jar latex.jar article.xml article.tex article.bib`, where latex.jar is a path to the jar file, article.xml - input JATS XML file and article.tex and bib - output latex files.
+
+## Note
+Do not download from the code from master branch. We use it for our journal purpose and it transforms JATS documents into LaTeX with GOST standard. Also it requires additional argument.  
 
 ## Examples
 Examples can be seen in the examples folder. Also all pdf on this [site](https://e-medjournal.com) are made with JATS2LaTeX 

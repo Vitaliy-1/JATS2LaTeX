@@ -256,7 +256,7 @@ public class BodyStandard {
 			
 			if (parContentPar.getClass().getName() == "org.emed.classes.Par") {
 				Par par = (Par) parContentPar;
-				wrlatex.write(par.getContent().trim());
+				wrlatex.write(par.getContent());
 			} else if (parContentPar.getClass().getName() == "org.emed.classes.Italic") {
 				Italic italic = (Italic) parContentPar;
 				wrlatex.write("\\textit{" + italic.getContent() + "}");
