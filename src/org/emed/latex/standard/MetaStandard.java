@@ -130,7 +130,7 @@ public class MetaStandard {
 		if (articleMeta.getJournal() != null) {
 			wrlatex.write(articleMeta.getJournal());
 		}
-		wrlatex.write("\\\\[0.5cm]{");
+		wrlatex.write("\\\\[0.7cm]{");
 		wrlatex.newLine();
 		if (articleMeta.getDoi() != null && articleMeta.getUdc() == null) {
 			wrlatex.write("\\flushleft\\small{DOI: " + articleMeta.getDoi() + "\\hfill }\\\\[0.4cm]}{");
@@ -204,7 +204,7 @@ public class MetaStandard {
 		}
 		// Keywords
 		if (articleMeta.getKeywords() != null) {
-			wrlatex.write("{\\textbf{Ключові слова:}} ");
+			wrlatex.write("{\\textbf{Keywords:}} ");
 			for(int i = 0; i < articleMeta.getKeywords().size(); i++) {
 				if (i == (articleMeta.getKeywords().size() - 1)) {
 					wrlatex.write("\\texttt{" + articleMeta.getKeywords().get(i) + "}");
