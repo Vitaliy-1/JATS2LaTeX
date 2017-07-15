@@ -138,11 +138,17 @@ public class Back {
 					bibitemBook.setPublisherName(publisherName.getTextContent());
 				}
 				Node year = (Node) xPath.compile("year").evaluate(ref, XPathConstants.NODE);
-				int yearInt = Integer.parseInt(year.getTextContent());
-				if (yearInt != 0) {
-					bibitemBook.setYear(yearInt);
+				if (year!= null) {
+					try {
+						int yearInt = Integer.parseInt(year.getTextContent());
+						if (yearInt != 0) {
+							bibitemBook.setYear(yearInt);
+						}
+					} catch (Exception e) {
+						System.err.println("year must be an integer in reference number " + (i+1));
+						e.printStackTrace();
+					}
 				}
-				
 				bibitem.getBibitem().add(bibitemBook);	
 			} else if ((ref.getAttributes().getNamedItem("publication-type") != null && ref.getAttributes().getNamedItem("publication-type").getTextContent().contains("chapter")) || chapterTitleCheck != null) {
 				BibitemChapter bibitemChapter = new BibitemChapter();
@@ -207,9 +213,16 @@ public class Back {
 					bibitemChapter.setPublisherName(publisherName.getTextContent());
 				}
 				Node year = (Node) xPath.compile("year").evaluate(ref, XPathConstants.NODE);
-				int yearInt = Integer.parseInt(year.getTextContent());
-				if (yearInt != 0) {
-					bibitemChapter.setYear(yearInt);
+				if (year != null) {
+					try {
+						int yearInt = Integer.parseInt(year.getTextContent());
+						if (yearInt != 0) {
+							bibitemChapter.setYear(yearInt);
+						}
+					} catch (Exception e) {
+						System.err.println("year must be an integer in reference number " + (i+1));
+						e.printStackTrace();
+					}
 				}
 				Node fpage = (Node) xPath.compile("fpage").evaluate(ref, XPathConstants.NODE);
 				if (fpage != null) {
@@ -256,9 +269,16 @@ public class Back {
 					bibitemConf.setConfname(confname.getTextContent());
 				}
 				Node year = (Node) xPath.compile("year").evaluate(ref, XPathConstants.NODE);
-				int yearInt = Integer.parseInt(year.getTextContent());
-				if (yearInt != 0) {
-					bibitemConf.setYear(yearInt);
+				if (year != null) {
+					try {
+						int yearInt = Integer.parseInt(year.getTextContent());
+						if (yearInt != 0) {
+							bibitemConf.setYear(yearInt);
+						}
+					} catch (Exception e) {
+					    System.err.println("year must be an integer in reference number " + (i+1));
+						e.printStackTrace();
+					}
 				}
 				Node confdate = (Node) xPath.compile("conf-date").evaluate(ref, XPathConstants.NODE);
 				if (confdate != null) {
