@@ -40,7 +40,7 @@ public class BackBib {
 								bib.newLine();
 							}
 						}
-					} else if (bibJournal.getCollab() != null && bibJournal.getName() == null) {
+					} else if (bibJournal.getCollab() != null) {
 						bib.write("author = \"{");
 						bib.write(bibJournal.getCollab());
 						bib.write("}\",");

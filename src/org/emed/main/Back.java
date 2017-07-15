@@ -205,10 +205,16 @@ public class Back {
 				if (publisherName != null) {
 					bibitemChapter.setPublisherName(publisherName.getTextContent());
 				}
-				Node year = (Node) xPath.compile("year").evaluate(ref, XPathConstants.NODE);
-				int yearInt = Integer.parseInt(year.getTextContent());
-				if (yearInt != 0) {
-					bibitemChapter.setYear(yearInt);
+				try {
+					Node year = (Node) xPath.compile("year").evaluate(ref, XPathConstants.NODE);
+					int yearInt = Integer.parseInt(year.getTextContent());
+					if (yearInt != 0) {
+						bibitemChapter.setYear(yearInt);
+					}
+				} catch (Exception e) {
+					System.err.println("Citation number: " + (i+1) + " doesn't have year tag");
+					System.err.println("error code for developers:");
+					e.printStackTrace();
 				}
 				Node fpage = (Node) xPath.compile("fpage").evaluate(ref, XPathConstants.NODE);
 				if (fpage != null) {
@@ -238,7 +244,7 @@ public class Back {
 					    }
 					}
 				}
-				Node collab = (Node) xPath.compile("collab").evaluate(ref, XPathConstants.NODE);
+				Node collab = (Node) xPath.compile("person-group/collab").evaluate(ref, XPathConstants.NODE);
 				if (surname == null && collab != null) {
 					bibitemConf.setCollab(collab.getTextContent());
 				}
