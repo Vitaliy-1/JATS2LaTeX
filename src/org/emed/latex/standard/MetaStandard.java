@@ -45,6 +45,8 @@ public class MetaStandard {
 		wrlatex.newLine();
 		wrlatex.write("\\usepackage{rotating}");
 		wrlatex.newLine();
+		wrlatex.write("\\usepackage{dblfloatfix}");
+		wrlatex.newLine();
 		wrlatex.write("\\usepackage{caption}");
 		wrlatex.newLine();
 		wrlatex.write("\\usepackage{authblk}");
