@@ -30,6 +30,8 @@ public class MetaGost {
 		wrobj.newLine();
 		wrobj.write("\\usepackage{rotating}");
 		wrobj.newLine();
+		wrobj.write("\\usepackage{dblfloatfix}");
+		wrobj.newLine();
 		wrobj.write("\\usepackage{caption}");
 		wrobj.newLine();
 		wrobj.write("\\usepackage{authblk}");

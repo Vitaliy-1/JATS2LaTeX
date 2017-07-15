@@ -98,7 +98,7 @@ public class BodyGost {
 				wrlatex.newLine();
 			} else if (secContent.getClass().getName() == "org.emed.classes.Table") {
 				Table table = (Table) secContent;
-				wrlatex.write("\\begin{table*}");
+				wrlatex.write("\\begin{table*}[!b]");
 				wrlatex.newLine();
 				List<ParContent> tabContents = table.getParContent();
 				for (ParContent parContent : tabContents) {
