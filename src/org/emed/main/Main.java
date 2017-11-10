@@ -39,6 +39,7 @@ public class Main {
 
 	public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException, XPathExpressionException, IllegalArgumentException, IllegalAccessException, org.emed.main.CustomExceptions {
 		String inputFile = args[0];
+		
 		if (!(inputFile.endsWith(".xml"))) {
     		throw new CustomExceptions("Input file extension must be .xml");
     	}

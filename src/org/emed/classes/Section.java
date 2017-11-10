@@ -41,7 +41,9 @@ public class Section {
 	}
 	
 	public void setSecContent(ArrayList<Section> seccontent) {
-		this.seccontent = seccontent;
+		if (this.seccontent == null) {
+			this.seccontent = seccontent;
+		} 
 	}
 	
 }
