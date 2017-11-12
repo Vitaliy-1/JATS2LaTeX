@@ -252,10 +252,15 @@ public class BodyStandard {
 	}
 	
 	private static void writingParContent(BufferedWriter wrlatex, List<ParContent> parContents) throws IOException {
+		int ifList = 0;
+		
 		for (ParContent parContentPar : parContents) {
 			
 			if (parContentPar.getClass().getName() == "org.emed.classes.Par") {
 				Par par = (Par) parContentPar;
+				if (par.getType() != null && par.getType().contains("list-par")) {
+					wrlatex.write("\\item ");
+				}
 				wrlatex.write(par.getContent());
 			} else if (parContentPar.getClass().getName() == "org.emed.classes.Italic") {
 				Italic italic = (Italic) parContentPar;
@@ -275,7 +280,32 @@ public class BodyStandard {
 				}
 				
 				
-			} 
+			} else if (parContentPar.getClass().getName() == "org.emed.classes.ParContent") {
+				
+				// For nested list
+				ifList += 1;
+				
+				if (ifList == 1 && parContentPar.getType().contains("ordered")) {
+					wrlatex.newLine();
+					wrlatex.write("\\begin{enumerate}");
+					wrlatex.newLine();
+				} else if (ifList == 1 && parContentPar.getType().contains("unordered")) {
+					wrlatex.newLine();
+					wrlatex.write("\\begin{itemize}");
+					wrlatex.newLine();
+				}
+				
+				List<ParContent> listParContents = parContentPar.getParContentList();
+				listParContents.forEach(listPar -> listPar.setType("list-par"));
+				writingParContent(wrlatex, listParContents);
+				
+				if (ifList + 2 == parContents.size() && parContentPar.getType().contains("ordered")) {
+					wrlatex.write("\\end{enumerate}");
+				} else if (ifList + 2 == parContents.size() && parContentPar.getType().contains("unordered")) {
+					wrlatex.write("\\end{itemize}");
+				}
+				
+			}
 				
 		} // end of Paragraph content
 	}

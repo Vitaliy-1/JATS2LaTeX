@@ -3,6 +3,12 @@ package org.emed.classes;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpressionException;
+
+import org.w3c.dom.Node;
+
 
 
 public class Section {
@@ -15,7 +21,9 @@ public class Section {
 		return title;
 	}
 
-	public void setTitle(String title) {
+	public void setTitle(XPath xPath, Node nodeSection) throws XPathExpressionException {
+		Node nodeSectionTitle = (Node) xPath.compile("title").evaluate(nodeSection,  XPathConstants.NODE);
+		String title = nodeSectionTitle.getTextContent();
 		this.title = title;
 	}
 	
@@ -35,7 +43,9 @@ public class Section {
 	}
 	
 	public void setSecContent(ArrayList<Section> seccontent) {
-		this.seccontent = seccontent;
+		if (this.seccontent == null) {
+			this.seccontent = seccontent;
+		} 
 	}
 	
 }

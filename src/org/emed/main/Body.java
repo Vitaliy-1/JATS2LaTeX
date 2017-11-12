@@ -30,37 +30,52 @@ public class Body {
 	
 	protected static ArrayList<Section> body(Document document, XPath xPath) throws XPathExpressionException, DOMException {
 		NodeList nodeSections = (NodeList) xPath.compile("/article/body/sec").evaluate(document, XPathConstants.NODESET);
-		// set sections
 		ArrayList<Section> listSections = new ArrayList<Section>();
-		// set subsections
-		ArrayList<Section> sublistSections = new ArrayList<Section>();
-		//set subsubsections
-		ArrayList<Section> subsublistSections = new ArrayList<Section>();
 		for (int i = 0; i < nodeSections.getLength(); i++) {
+			Section section = new Section();
+			section.setType("");
 			Node nodeSection = nodeSections.item(i);
-			sectionParsing(xPath, listSections, sublistSections, subsublistSections, nodeSection);
+			sectionParsing(xPath, section, nodeSection);
+			listSections.add(section);
+			
+			NodeList nodeSubSections = (NodeList) xPath.compile("sec").evaluate(nodeSection,  XPathConstants.NODESET);
+			if (nodeSubSections != null) {
+				// set subsections
+				ArrayList<Section> subListSections = new ArrayList<Section>();
+				section.setSecContent(subListSections);
+				for (int ii = 0; ii < nodeSubSections.getLength(); ii++) {
+					Section subSection = new Section();
+					subSection.setType("sub");
+					Node nodeSubSection = nodeSubSections.item(ii);
+					sectionParsing(xPath, subSection, nodeSubSection);
+					subListSections.add(subSection);
+					
+					NodeList nodeSubSubSections = (NodeList) xPath.compile("sec").evaluate(nodeSubSection,  XPathConstants.NODESET);
+					if (nodeSubSubSections != null) {
+						//set subsubsections
+						ArrayList<Section> subSubListSections = new ArrayList<Section>();
+						subSection.setSecContent(subSubListSections);
+						for (int iii = 0; iii < nodeSubSubSections.getLength(); iii++) {
+							Section subSubSection = new Section();
+							subSubSection.setType("subsub");
+							Node nodeSubSubSection = nodeSubSubSections.item(iii);
+							sectionParsing(xPath, subSubSection, nodeSubSubSection);
+							subSubListSections.add(subSubSection);
+						}
+					}
+				}
+				
+			}
+			
 		}
 		return listSections;
 	}
 
 
-	private static void sectionParsing(XPath xPath, ArrayList<Section> listSections, ArrayList<Section> sublistSections, ArrayList<Section> subsublistSections, Node nodeSection)
+	private static void sectionParsing(XPath xPath, Section section, Node nodeSection)
 			throws XPathExpressionException, DOMException, NumberFormatException {
-		Node nodeSectionTitle = (Node) xPath.compile("title").evaluate(nodeSection,  XPathConstants.NODE);
-		Section section = new Section();
-		Node ifSubSec = (Node) xPath.compile("parent::sec").evaluate(nodeSection,  XPathConstants.NODE);
-		Node ifSubSubSec = (Node) xPath.compile("parent::sec/parent::sec").evaluate(nodeSection,  XPathConstants.NODE);
-		if (ifSubSec == null) {
-			section.setType("");
-			listSections.add(section);
-		} else if (ifSubSec != null && ifSubSubSec == null) {
-			section.setType("sub");
-			sublistSections.add(section);
-		} else if (ifSubSec != null && ifSubSubSec != null) {
-			section.setType("subsub");
-			subsublistSections.add(section);
-		}
-		section.setTitle(nodeSectionTitle.getTextContent());
+			
+		section.setTitle(xPath, nodeSection);
 		NodeList nodeSecElements = (NodeList) xPath.compile("p|fig|sec|table-wrap|list").evaluate(nodeSection, XPathConstants.NODESET);
 		for (int i1 = 0; i1 < nodeSecElements.getLength(); i1++) {
 			
@@ -84,8 +99,7 @@ public class Body {
 					ParContent itemList = new ParContent();
 					itemList.setType("unordered");
 					section.getSecContent().add(itemList);
-					parsingParContent(nodeSubSecListItem, itemList);
-					
+					parsingParContent(nodeSubSecListItem, itemList);					
 				}
 				Markup markup2 = new Markup();
 				markup2.setContent("\\end{itemize}");
@@ -205,17 +219,9 @@ public class Body {
 				
 				section.getSecContent().add(table);
 				
-		    } else if ((nodeSecElement.getNodeName() == "sec") && (nodeSecElement.getTextContent() != null)) {
-		    	if (section.getType() == "sub") {
-		    		section.setSecContent(subsublistSections);
-		    	} else if (section.getType() == "") {
-		    		section.setSecContent(sublistSections);
-		    	}
-		    	sectionParsing(xPath, listSections, sublistSections, subsublistSections, nodeSecElement);  
-			}
+		    } 
 		}
 	}
-
 
 	protected static void parsingParContent(Node nodeSecElement, ParContent parContent) throws DOMException {
 		NodeList insidePars = nodeSecElement.getChildNodes();
@@ -258,6 +264,20 @@ public class Body {
 					  xref.setTableContent(xrefTable);
 					  parContent.getParContentList().add(xref);
 				  }
+			} else if (insidePar.getNodeName() == "list") {
+				NodeList listItems = insidePar.getChildNodes();
+				
+				for (int i = 0; i < listItems.getLength(); i++) {
+					NodeList listItem = listItems.item(i).getChildNodes();
+					for (int y = 0; y < listItem.getLength(); y++) {
+						ParContent itemList = new ParContent();
+						itemList.setType(insidePar.getAttributes().getNamedItem("list-type").getTextContent());
+						parContent.getParContentList().add(itemList);
+						Node listItemP = listItem.item(y);
+						parsingParContent(listItemP, itemList);
+					}
+				}
+				
 			}
 		}
 	}

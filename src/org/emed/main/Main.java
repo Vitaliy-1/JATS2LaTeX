@@ -39,19 +39,22 @@ import org.emed.latex.standard.MetaStandard;
 public class Main {
 
 	public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException, XPathExpressionException, IllegalArgumentException, IllegalAccessException {
-		String inputFile = args[0];
 		
-		// path to LaTeX in Gost format
-		String outputFile = args[1];
-		
-		// path to LaTeX in Stadard format
-		String outputLatexStandard = args[2];
-		
-		// path to bibtex
-		String outputBib = args[3];
-		
-		writerToFile(inputFile, outputFile, outputLatexStandard, outputBib);
-		
+		if (args.length == 4) {
+			String inputFile = args[0];
+			// path to LaTeX in Gost format
+			String outputFile = args[1];
+			// path to LaTeX in Standard format
+			String outputLatexStandard = args[2];
+			// path to bibtex
+			String outputBib = args[3];
+			writerToFile(inputFile, outputFile, outputLatexStandard, outputBib);
+		} else if (args.length == 3) {
+			String inputFile = args[0];
+			String outputLatexStandard = args[1];
+			String outputBib = args[2];
+			writerToFile(inputFile, outputLatexStandard, outputBib);
+		}			
 	}
 
 	private static void writerToFile(String inputFile, String outputFile, String outputLatexStandard, String outputBib) throws IOException,
@@ -93,6 +96,42 @@ public class Main {
 		latexStandardWriter(wrlatex, latex, referenceLink);
 		bibWriter(bib, latex);
 	}
+	
+	private static void writerToFile(String inputFile, String outputLatexStandard, String outputBib) throws IOException,
+	ParserConfigurationException, SAXException, XPathExpressionException, DOMException, NumberFormatException {
+
+		
+		// writing LaTeX in World Standard
+		Path latexStandard = Paths.get(outputLatexStandard);
+		BufferedWriter wrlatex = Files.newBufferedWriter(latexStandard, StandardCharsets.UTF_8);
+		
+		// writing bibtex
+		Path bibtexStandard = Paths.get(outputBib);
+		BufferedWriter bib = Files.newBufferedWriter(bibtexStandard, StandardCharsets.UTF_8);
+		
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder builder = factory.newDocumentBuilder();
+		
+		Document document = builder.parse(inputFile);
+		XPath xPath =  XPathFactory.newInstance().newXPath();
+		
+		/* parsing JATS XML */
+		LaTeX latex = jatsParser(document, xPath);
+		
+		/* creating reference to a bib with regex */
+		String referenceLink = outputBib.trim().replaceAll(".bib$", "");
+		if (referenceLink.contains("\\") || referenceLink.contains("/")) {
+			Pattern p = Pattern.compile("(\\w+)$");
+			Matcher m = p.matcher(referenceLink);
+			if (m.find()) {
+				referenceLink = m.group();
+			}
+		} 
+		
+		/* writing to LaTeX (standard, bib) */
+		latexStandardWriter(wrlatex, latex, referenceLink);
+		bibWriter(bib, latex);
+		}
 
 	private static void latexGostWriter(BufferedWriter wrobj, LaTeX latex) throws IOException {
 		

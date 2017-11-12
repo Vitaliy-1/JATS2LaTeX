@@ -28,7 +28,10 @@ public class TableFunctions {
 			for (int w = 0; w < childFirstRows.getLength(); w++) {
 				Node childFirstRow = childFirstRows.item(w);
 				if (childFirstRow.getNodeValue() == null && (childFirstRow.getNodeName() == "th" || childFirstRow.getNodeName() == "td")) {
-					int number = Integer.parseInt(childFirstRow.getAttributes().getNamedItem("colspan").getNodeValue());
+					int number = 1;
+					if (childFirstRow.getAttributes().getNamedItem("colspan") != null) {
+						number = Integer.parseInt(childFirstRow.getAttributes().getNamedItem("colspan").getNodeValue());
+					} 
 					columnNumber = columnNumber + number;
 				}
 			}
@@ -49,14 +52,22 @@ public class TableFunctions {
 					Cell cell = new Cell();
 					row.getCell().add(cell);
 					Node cellNode = cellNodes.item(w);
-					if (cellNode != null && cellNode.getAttributes() != null && cellNode.getAttributes().getNamedItem("colspan") != null) {
-						cell.setColspan(Integer.parseInt(cellNode.getAttributes().getNamedItem("colspan").getNodeValue()));
-						cell.setRowspan(Integer.parseInt(cellNode.getAttributes().getNamedItem("rowspan").getNodeValue()));
+					if (cellNode != null && cellNode.getAttributes() != null) {
+						if (cellNode.getAttributes().getNamedItem("colspan") != null) {
+							cell.setColspan(Integer.parseInt(cellNode.getAttributes().getNamedItem("colspan").getNodeValue()));
+						} else {
+							cell.setColspan(1);
+						}
+						if (cellNode.getAttributes().getNamedItem("rowspan") != null) {
+							cell.setRowspan(Integer.parseInt(cellNode.getAttributes().getNamedItem("rowspan").getNodeValue()));
+						} else {
+							cell.setRowspan(1);
+						}
 						ParContent parContent = new ParContent();
 						parContent.setType("tableCell");
 						cell.getParContent().add(parContent);
 						Body.parsingParContent(cellNode, parContent);
-					}
+					} 
 					
 				}
 				
